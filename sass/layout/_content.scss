@@ -1,0 +1,38 @@
+.site-content {
+    position: relative;
+}
+
+.zuul-content {
+    padding: 4em 0;
+}
+
+.page-content {
+    padding-bottom: 4em;
+}
+
+.zuul-intro {
+    text-align: center;
+    margin: 0;
+    width: 100%;
+    padding: 0 20px;
+
+    @include grid-media($break640) {
+        margin: 0 0 48px;
+    }
+
+    p {
+        max-width: 600px;
+        margin: 0.5em auto 1em;
+        color: $color__text-dark;
+    }
+}
+
+.single {
+    .zuul-intro {
+        margin: 0;
+
+        @include grid-media($break640) {
+            margin: 0 0 40px;
+        }
+    }
+}

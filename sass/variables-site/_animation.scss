@@ -1,0 +1,119 @@
+/**
+ * Custom animations
+ */
+
+@keyframes spin {
+	100% {
+		transform: rotate( 360deg );
+	}
+}
+
+@keyframes fade_in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fade_in_and_up {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+        margin-top: 0;
+    }
+}
+
+@keyframes fade_out_and_up {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        top: -20px;
+    }
+}
+
+@keyframes fade_in_one {
+	0% {
+		opacity: 0;
+	}
+
+	1% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes hero_text {
+	0% {
+		opacity: 0;
+		transform: translateX(-20px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0 50%;
+	}
+
+	50% {
+		background-position: 100% 50%;
+	}
+
+	100% {
+		background-position: 0 50%;
+	}
+}
+
+@keyframes zoom_rotate {
+	0% {
+		transform: scale(1) rotate(0deg);
+		z-index: 2;
+	}
+
+	25% {
+		transform: scale(1.06) rotate(5deg);
+	}
+
+	50% {
+		transform: scale(1.12) rotate(0deg);
+	}
+
+	75% {
+		transform: scale(1.18) rotate(-5deg);
+	}
+
+	100% {
+		transform: scale(1.18) rotate(0deg);
+		z-index: 3;
+	}
+}
+
+@keyframes back_and_forth {
+	0% {
+		right: 0;
+	}
+
+	50% {
+		right: calc( 100% - 50px );
+	}
+
+	100% {
+		right: 0;
+	}
+}

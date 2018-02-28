@@ -1,0 +1,50 @@
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	transition: all 0.25s ease-in-out;
+    font-family: $font__head;
+    font-weight: 300;
+    background: $color__primary;
+    color: $color__white;
+    border: 2px solid $color__primary;
+    display: block;
+    float: left;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 0.25em 2.5em;
+    border-radius: 100px;
+	line-height: 1;
+
+	&:hover,
+	&:focus,
+	&:active {
+		background: transparent;
+		color: $color__primary;
+	}
+}
+
+div.wpforms-container-full .wpforms-form input[type=submit], div.wpforms-container-full .wpforms-form button[type=submit], div.wpforms-container-full .wpforms-form .wpforms-page-button,
+.entry-content div.wpforms-container-full .wpforms-form input[type=submit], .entry-content div.wpforms-container-full .wpforms-form button[type=submit], .entry-content div.wpforms-container-full .wpforms-form .wpforms-page-button,
+.widget div.wpforms-container-full .wpforms-form input[type=submit], .widget div.wpforms-container-full .wpforms-form button[type=submit], .widget div.wpforms-container-full .wpforms-form .wpforms-page-button {
+	transition: all 0.25s ease-in-out;
+	font-family: $font__head;
+	font-weight: 300;
+	background: $color__primary;
+	color: $color__white;
+	border: 2px solid $color__primary;
+	display: block;
+	font-weight: 500;
+	text-decoration: none;
+	padding: 0.25em 2.5em;
+	border-radius: 100px;
+	line-height: 1;
+
+	&:hover,
+	&:focus,
+	&:active {
+		background: transparent;
+		color: $color__primary;
+		border: 2px solid $color__primary;
+	}
+}

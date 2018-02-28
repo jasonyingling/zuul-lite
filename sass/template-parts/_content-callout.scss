@@ -1,0 +1,36 @@
+.zuul-callout {
+    @include gradient;
+    color: $color__white;
+    padding: 10px 0;
+
+    @include grid-media($break640) {
+        padding: 0;
+    }
+
+    .column-1 {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        @include grid-media($break640) {
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: nowrap;
+        }
+
+        .zuul-button {
+            //min-width: 220px;
+            flex: 0 0 auto;
+        }
+
+        h4 {
+            margin: 0;
+            margin: 0.5em 0.5em 0.5em 0;
+            text-align: center;
+
+            @include grid-media($break640) {
+                text-align: left;
+            }
+        }
+    }
+}

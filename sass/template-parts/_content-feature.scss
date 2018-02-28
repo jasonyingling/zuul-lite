@@ -1,0 +1,42 @@
+.zuul-feature {
+    margin-bottom: 48px;
+    text-align: center;
+
+    @include grid-media($break640) {
+        text-align: left;
+    }
+
+    p {
+        color: $color__text;
+    }
+}
+
+.zuul-feature-icon {
+    max-width: 50px;
+    margin-right: auto;
+    margin-bottom: 1em;
+    margin-left: auto;
+
+    @include grid-media($break640) {
+        margin-right: 25px;
+        margin-left: 0;
+        float: left;
+    }
+
+}
+
+.zuul-feature-copy {
+    @include grid-media($break640) {
+        width: calc( 100% - 75px );
+        float: right;
+        margin-top: 5px;
+    }
+}
+
+.zuul-feature-title {
+    margin-top: 1.5em;
+
+    @include grid-media($break640) {
+        margin-top: 0;
+    }
+}

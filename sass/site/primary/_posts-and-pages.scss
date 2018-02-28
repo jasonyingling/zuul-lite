@@ -1,0 +1,34 @@
+.updated:not(.published) {
+	margin-left: 20px;
+}
+
+.entry-content,
+.entry-summary {
+	margin: 0 0 10px;
+
+	> *:first-child {
+		margin-top: 0;
+	}
+
+	.alignnone {
+		margin: 40px auto;
+	}
+
+	.alignfull,
+	.alignwide {
+		img {
+			margin: 0 auto;
+		}
+	}
+
+	.alignfull {
+		img {
+			width: 100%;
+		}
+	}
+}
+
+.page-links {
+	clear: both;
+	margin: 0 0 1.5em;
+}

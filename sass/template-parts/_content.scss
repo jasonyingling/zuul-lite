@@ -1,0 +1,626 @@
+.entry-categories {
+    .post-categories {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+
+        li {
+            display: inline-block;
+            margin: 0 10px 10px;
+        }
+
+        a {
+            @include font-size(0.8125);
+            color: $color__text-light;
+            position: relative;
+
+            &:hover, &:focus {
+                opacity: 0.5;
+            }
+        }
+    }
+}
+
+.zuul-featured-single {
+    max-width: 1440px;
+    margin: 0 auto 48px;
+    clear: both;
+    text-align: center;
+
+    @include grid-media($break640) {
+        padding: 0 40px;
+    }
+
+    img,
+    .gallery-row,
+    .featured-video {
+        margin: 0 auto;
+    }
+
+    .tiled-gallery {
+        margin-bottom: 0;
+    }
+}
+
+.zuul-featured-hp {
+    margin-bottom: 0;
+    overflow: hidden;
+
+    img {
+        transition: all 1.0s ease-in-out;
+    }
+
+    &:hover, &:focus {
+        img {
+            transform: scale(1.1);
+        }
+    }
+}
+
+.zuul-section-title {
+    padding: 48px 0 0;
+
+    .zuul-author-meta {
+        justify-content: center;
+        margin-bottom: 40px;
+    }
+}
+
+.page {
+    .zuul-section-title {
+        padding: 3em 0 0;
+    }
+}
+
+.entry-title {
+    margin: 0 0 0.25em;
+    @include font-size(2.5);
+
+    @include grid-media($break768) {
+        @include font-size(3);
+    }
+
+    @include grid-media($break960) {
+        @include font-size(4);
+    }
+}
+
+.zuul-hp-loop {
+
+    .has-post-thumbnail {
+        .zuul-section-title {
+            transform: translateY(-50px);
+
+            .zuul-author-meta {
+                margin-bottom: 10px;
+            }
+        }
+    }
+
+    .zuul-section-title {
+        margin: 0 20px;
+        padding: 13px 20px 20px;
+        background: $color__white;
+
+        @include grid-media($break640) {
+            margin: 0 30px;
+        }
+    }
+
+    .zuul-intro {
+        margin: 0 0 20px;
+        padding: 0;
+
+        .entry-title {
+            @include font-size(2);
+
+            @include grid-media($break640) {
+                @include font-size(3);
+            }
+
+            a {
+                color: $color__text;
+            }
+        }
+    }
+
+}
+
+.hp-content {
+    margin: 0 20px;
+    
+    @include grid-media($break640) {
+        margin: 0 60px;
+    }
+}
+
+.zuul-related-posts {
+    @include grid-collapse;
+    margin-top: 80px;
+    text-align: center;
+
+    > h3 {
+        margin-bottom: 40px;
+    }
+
+    @include grid-media($break640) {
+        @include grid-collapse;
+    }
+
+    @supports ( transform: translateY(-20px) ) {
+        article {
+            margin-bottom: -50px;
+        }
+    }
+
+    .zuul-intro {
+        .entry-title {
+            @include font-size(2);
+        }
+    }
+}
+
+.zuul-loop-post {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto 120px;
+
+    .zuul-intro {
+        margin: 0 0 30px;
+        padding: 0;
+
+        .entry-title {
+            @include font-size(2);
+
+            @include grid-media($break640) {
+                @include font-size(3);
+            }
+        }
+    }
+
+    &:first-child {
+        padding-top: 30px;
+    }
+
+    &.has-post-thumbnail {
+        .zuul-section-title {
+            transform: translateY(-60px);
+
+            .zuul-author-meta {
+                margin-bottom: -30px;
+            }
+        }
+    }
+
+    .zuul-section-title {
+        margin: 0 20px;
+        padding: 13px 20px 20px;
+        background: $color__white;
+
+        @include grid-media($break640) {
+            margin: 0 30px;
+        }
+    }
+
+    .zuul-button {
+        margin-top: 0;
+    }
+
+    .entry-title {
+        position: relative;
+
+        // &:before {
+        //     content: '';
+        //     display: block;
+        //     height: 1px;
+        //     width: 250px;
+        //     position: absolute;
+        //     top: -50px;
+        //     left: 50%;
+        //     margin-left: -125px;
+        //     background: $color__text-light;
+        //     opacity: .9;
+        // }
+
+        a {
+            color: $color__text;
+        }
+    }
+}
+
+.posted-on {
+    @include font-size(0.8125);
+    color: $color__text-light;
+    position: relative;
+}
+
+// .single-content,
+// .page-content {
+//     padding-bottom: 2em;
+// }
+
+.narrow-content {
+	.alignfull,
+	.alignwide {
+		width: 100vw;
+		position: relative;
+		left: 50%;
+		right: 50%;
+		margin-left: -50vw;
+		margin-right: -50vw;
+        margin-bottom: 40px;
+		text-align: center;
+
+		img, iframe {
+			width: 100%;
+		}
+	}
+
+	.alignwide {
+		img {
+			max-width: 1024px;
+            margin: 0 auto;
+		}
+	}
+
+    .alignright {
+        margin-right: 0;
+
+        @include grid-media($break640) {
+            margin-right: -40px;
+        }
+    }
+
+    .alignleft {
+        margin-left: 0;
+
+        @include grid-media($break640) {
+            margin-left: -40px;
+        }
+    }
+}
+
+.entry-content:not(.wc-tab) {
+    // figure.alignnone {
+    //     width: 100vw !important;
+    //     position: relative;
+    //     left: 50%;
+    //     right: 50%;
+    //     margin-left: -50vw;
+    //     margin-right: -50vw;
+    //     max-width: none !important;
+    // }
+
+    .wp-caption-text {
+        @include font-size(0.8125);
+    }
+
+    &.narrow-content {
+        max-width: 768px;
+        margin-left: auto;
+        margin-right: auto;
+
+        blockquote {
+            margin: 48px 0 12px;
+            width: 100%;
+        }
+    }
+
+    a:not(.button, .share-icon) {
+        position: relative;
+
+        &:before {
+            transition: width .5s ease-in-out;
+            content: '';
+            height: 2px;
+            background: $color__primary;
+            width: 0%;
+            position: absolute;
+            bottom: -0.25em;
+        }
+
+        &:hover,
+        &:focus {
+            color: $color__primary;
+
+            &:before {
+                width: 100%;
+            }
+        }
+
+        &:visited {
+            //color: $color__primary;
+
+            &:before {
+                width: 100%;
+            }
+        }
+    }
+}
+
+.edit-link-wrap {
+    clear: both;
+    max-width: 768px;
+    margin: 0 auto;
+    display: block;
+}
+
+.entry-footer {
+    clear: both;
+    max-width: 768px;
+    margin: 1em auto 29px;
+    border-radius: 20px;
+    padding: 0 20px;
+    box-sizing: content-box;
+
+    @include grid-media($break640) {
+        padding: 0 40px;
+    }
+
+    a {
+        position: relative;
+
+        &:before {
+            transition: width .5s ease-in-out;
+            content: '';
+            height: 2px;
+            width: 0%;
+            position: absolute;
+            bottom: -0.25em;
+        }
+
+        &:hover,
+        &:focus,
+        &:visited {
+            &:before {
+                width: 100%;
+            }
+        }
+    }
+
+    .cat-links,
+    .tags-links {
+        @include font-size(1);
+        width: 100%;
+        display: block;
+        clear: both;
+        margin-top: 1em;
+
+        i {
+            margin-right: 0.25em;
+            color: $color__primary;
+        }
+
+        a {
+            margin-left: 0.25em;
+        }
+    }
+}
+
+.zuul-single-author-meta {
+    margin-top: 60px;
+    margin-bottom: 40px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 1px 2px 20px 2px rgba(0, 0, 0, 0.2);
+
+    .zuul-single-author-bio {
+        @include gradient();
+        @include font-size(1.5);
+        color: $color__white;
+        padding: 40px 60px 80px;
+        border-radius: 5px 5px 0 0;
+    }
+
+    .zuul-single-author-thumb {
+        max-width: 90px;
+        margin: 0 auto;
+        transform: translateY(-45px);
+
+
+        img {
+            border-radius: 100%;
+            box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.15);
+        }
+    }
+
+    .zuul-single-author-info {
+        padding-bottom: 20px;
+        transform: translateY(-20px);
+    }
+
+    .zuul-single-author-title {
+        @include font-size(1);
+        color: $color__text-light;
+    }
+
+    span {
+        display: block;
+    }
+
+    a {
+        color: $color__text-light;
+        line-height: 1.25;
+
+        &:hover, &:focus {
+            color: $color__primary;
+        }
+    }
+
+    .zuul-single-author-link {
+        margin-top: 10px;
+    }
+
+}
+
+.post-password-form,
+.not-found .search-form {
+    label {
+        float: left;
+    }
+
+    input[type="submit"] {
+        height: 47px;
+        margin-left: 1em;
+    }
+}
+
+.zuul-post-loop:not(.content-with-sidebar) {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.content-with-sidebar {
+	display: flex;
+	flex-flow: row;
+	flex-wrap: wrap;
+	align-items: flex-start;
+
+    .widget {
+        padding: 20px;
+        background: none;
+        border: 0;
+
+        // Using inset box-shadow instead of border for sizing simplicity
+        box-shadow: inset 0 0 0 3px #f4f4f4;
+        font-size: inherit;
+        font-weight: 700;
+
+        // Required, since we're setting absolute on pseudo-elements
+        position: relative;
+        vertical-align: middle;
+
+        &::before,
+        &::after {
+          box-sizing: inherit;
+          content: '';
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          pointer-events: none;
+        }
+
+        figure {
+            margin-top: 0;
+        }
+
+        transition: color 0.25s;
+
+        &::before,
+        &::after {
+        // Set border to invisible, so we don't see a 4px border on a 0x0 element before the transition starts
+        border: 3px solid transparent;
+            width: 0;
+            height: 0;
+        }
+
+        // This covers the top & right borders (expands right, then down)
+        &::before {
+        top: 0;
+        left: 0;
+        }
+
+        // And this the bottom & left borders (expands left, then up)
+        &::after {
+        bottom: 0;
+        right: 0;
+        }
+
+        // Hover styles
+        &:hover::before,
+        &:hover::after {
+            width: 100%;
+            height: 100%;
+        }
+
+        &:hover::before {
+            transition:
+              width 0.25s ease-out, // Width expands first
+              height 0.25s ease-out 0.25s; // And then height
+        }
+
+        &:hover::after {
+            transition:
+              border-color 0s ease-out 0.5s, // Wait for ::before to finish before showing border
+              width 0.25s ease-out 0.5s, // And then exanding width
+              height 0.25s ease-out 0.75s; // And finally height
+        }
+
+        // Start ::after in same position as ::before
+        &::after {
+            top: 0;
+            left: 0;
+        }
+
+        // Change colors
+        &:hover::before {
+            border-top-color: $color__primary;
+            border-right-color: $color__primary;
+        }
+
+        &:hover::after {
+            border-bottom-color: $color__primary;
+            border-left-color: $color__primary;
+            transition: // Animate height first, then width
+              height 0.25s ease-out,
+              width 0.25s ease-out 0.25s;
+        }
+    }
+
+    &.zuul-post-loop {
+
+        .widget-area {
+            margin-top: 55px;
+        }
+
+        .zuul-loop-post {
+            margin-bottom: 60px;
+
+            .entry-title {
+                &:before {
+                    left: 0;
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+
+	.sidebar-content {
+		flex: 1 1 100%;
+		width: 100%;
+
+		@include grid-media($break768){
+			flex: 1 0 auto;
+			width: 65%;
+		}
+	}
+
+	aside {
+		flex: 1 1 100%;
+		width: 100%;
+        margin-top: 0;
+
+		@include grid-media($break768){
+			flex: 0 1 auto;
+			padding-left: 3em;
+			width: 35%;
+		}
+
+	}
+}
+
+.video-wrapper,
+.featured-video {
+	height: 0;
+	overflow: hidden;
+	padding-bottom: 56.25%; // For ratio 16:9. 75% if ratio is 4:3
+	position: relative;
+
+	embed,
+	object,
+	iframe {
+		@include position(absolute, 0px null null 0px);
+		@include size(100%);
+	}
+}

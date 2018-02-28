@@ -1,0 +1,121 @@
+.widget {
+	@include font-size(1);
+	line-height: 2;
+	margin: 0 0 1.5em;
+
+	/* Make sure select elements fit in widgets. */
+	select {
+		max-width: 100%;
+	}
+
+	>ul, >ol, .woocommerce-mini-cart {
+		> li {
+			padding: 0.5em 0;
+			border-bottom: dotted 1px $color__text-light;
+		}
+	}
+
+	ul,ol {
+		list-style-type: none;
+		margin-left: 0;
+		padding-left: 0;
+
+		ul,ol {
+			list-style-type: disc;
+			margin-left: 1.25em;
+		}
+	}
+}
+
+/**
+ * WooCommerce Product Search
+ */
+.woocommerce-product-search,
+.widget_search .search-form {
+	display: flex;
+	flex-direction: row;
+
+	label {
+        flex-grow: 1;
+    }
+
+    input[type="search"] {
+        @include font-size(1);
+        padding: 1em;
+        border-radius: 0;
+        background: transparent;
+        border-width: 0 0 2px 0;
+        padding: 0.5em 0.5em 0.5em 0;
+		min-width: 50%;
+		color: $color__text;
+        outline: 0;
+		width: 100%;
+    }
+
+	input[type=submit] {
+		@include font-size(1);
+		padding: 0.55em 1em;
+		flex: 0 1 38%;
+	}
+}
+
+
+/**
+ * Widget Titles
+ */
+.widget-title {
+	@include font-size(1.5);
+	margin-bottom: 0.25em;
+	margin-top: 0;
+}
+
+/**
+ * Widget Calendar
+ */
+.widget_calendar {
+	color: $color__text;
+	padding: 0.25em 2em 0;
+
+	table {
+		border-collapse: collapse;
+
+		a {
+			color: $color__primary;
+
+			&:before {
+				width: 0%;
+			}
+
+			&:hover,
+			&:focus {
+				&:before {
+					width: 100%;
+				}
+			}
+		}
+	}
+
+	td {
+		border: 1px solid $color__text;
+	}
+
+	tbody {
+		text-align: center;
+	}
+
+	tfoot {
+		td {
+			border-width: 0px;
+		}
+	}
+}
+
+/**
+ * Footer Widgets
+ */
+.site-footer {
+	.widget_calendar {
+		background: $color__white;
+		border-radius: 5px;
+	}
+}

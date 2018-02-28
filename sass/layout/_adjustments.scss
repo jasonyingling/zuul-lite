@@ -1,0 +1,9 @@
+.zuul-offset-top {
+    @include grid-media($break640) {
+        margin-top: -7em;
+    }
+}
+
+.extra-padding-right {
+    padding-right: 2em;
+}

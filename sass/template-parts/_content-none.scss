@@ -1,0 +1,19 @@
+.no-results,
+.not-found {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    header {
+        width: 100%;
+
+        .page-title {
+            margin-top: 0;
+        }
+    }
+}
+
+.error-404 {
+    padding-top: 4em;
+    padding-bottom: 10em;
+}

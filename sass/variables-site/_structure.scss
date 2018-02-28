@@ -1,0 +1,16 @@
+$size__site-main: 100%;
+$size__site-sidebar: 25%;
+$ara_max_width: 1440px;
+$ara_padding: 40px;
+$ara_padding_mobile: 20px;
+
+%post {
+	@include grid-container;
+	@include clearfix;
+}
+
+.container {
+	@extend %post;
+	max-width: $ara_max_width;
+	margin: 0 auto;
+}

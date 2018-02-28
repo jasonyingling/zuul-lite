@@ -1,0 +1,33 @@
+.zuul-homepage-content {
+    .zuul-content {
+        border-bottom: 1px solid $color__background-hr;
+
+        &:nth-child(2n) {
+            background: $color__background-alt;
+        }
+
+        &:last-child {
+            border-bottom-width: 0px;
+        }
+    }
+}
+
+.placeholder-section {
+    text-align: center;
+    padding: 4em 2em;
+
+    h2 {
+        max-width: 768px;
+        margin: 0 auto;
+        padding: 1em;
+        border: 2px dashed $color__background-hr;
+    }
+}
+
+.placeholder-container {
+    padding: 0 20px;
+
+    @include grid-media($break640) {
+        padding: 0 40px;
+    }
+}

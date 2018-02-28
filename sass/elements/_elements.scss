@@ -1,0 +1,139 @@
+html {
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after { /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+	box-sizing: inherit;
+}
+
+body {
+	background: $color__background-body; /* Fallback for when there is no custom background color defined. */
+}
+
+main {
+	display: block;
+}
+
+::selection {
+  background: $color__highlight; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: $color__highlight; /* Gecko Browsers */
+}
+
+.highlight {
+	background: $color__highlight;
+}
+
+.pull-left, .pull-right {
+	width: 42%;
+	padding: 10px;
+	background: $color__background-alt;
+
+	@include grid-media($break640) {
+		width: 32%;
+		padding: 20px;
+	}
+}
+
+.pull-left {
+	float: left;
+	margin: 1.5% 5% 2% 0;
+}
+
+.pull-right {
+	float: right;
+	margin: 1.5% 0% 2% 5%;
+}
+
+.page-template-template-testimonial,
+.post-type-archive-jetpack-testimonial {
+	background: $color__background-alt;
+
+	.zuul-angle {
+		polygon {
+			fill: $color__background-alt;
+		}
+	}
+}
+
+blockquote {
+	quotes: "" "";
+	padding: 1em 0 0.5em 2em;
+	position: relative;
+	@include font-size(1.5);
+
+	@include grid-media($break640) {
+		padding: 1em 0 0.5em 3em;
+	}
+
+	&:before {
+		content: '\201C';
+		@include font-size(5);
+		display: block;
+		position: absolute;
+		top: 21px;
+		left: 0;
+	}
+
+	&:after {
+		@include gradient;
+		content: '';
+		width: 100%;
+		height: 4px;
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+}
+
+q {
+	font-family: $font__head;
+	quotes: "“" "”" "‘" "’";
+
+	&:before {
+		content: open-quote;
+	}
+
+	&:after {
+		content: close-quote;
+	}
+}
+
+hr {
+	background-color: $color__background-hr;
+	border: 0;
+	height: 1px;
+	margin-bottom: 1.5em;
+}
+
+@import "lists";
+
+img {
+	height: auto; /* Make sure images are scaled correctly. */
+	max-width: 100%; /* Adhere to container width. */
+	display: block;
+}
+
+figure {
+	margin: 0; /* Extra wide images within figure tags don't overflow the content area. */
+}
+
+@import "tables";
+
+@import "buttons";
+
+.text-center {
+	text-align: center;
+}
+
+.text-left {
+	text-align: left;
+}
+
+.text-right {
+	text-align: right;
+}

@@ -1,0 +1,140 @@
+a {
+	color: $color__primary;
+	text-decoration: none;
+
+	&:visited {
+		opacity: 0.75;
+	}
+	&:hover,
+	&:focus,
+	&:active {
+		opacity: 0.75;
+	}
+	&:focus {
+		outline: thin dotted;
+	}
+	&:hover,
+	&:active {
+		outline: 0;
+	}
+}
+
+a.zuul-alt {
+	color: $color__text;
+
+	&:visited {
+		color: $color__primary;
+	}
+	&:hover,
+	&:focus,
+	&:active {
+		color: $color__primary;
+	}
+}
+
+.zuul-loop-heading a {
+	&:visited {
+		color: $color__text;
+	}
+	&:hover,
+	&:focus,
+	&:active {
+		color: $color__primary;
+	}
+}
+
+/*
+ * Pagination
+ */
+.zuul-pagination,
+.woocommerce-pagination {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	margin: 0 auto 3.5em;
+}
+
+.zuul-pagination {
+	.page-numbers {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 55px;
+		height: 55px;
+		text-align: center;
+		color: $color__text;
+		background: $color__background-button;
+		float: left;
+		margin: 0 0.5em 0 0;
+		list-style-type: none;
+
+		&:last-child {
+			margin-right: 0;
+		}
+
+		&:visited {
+			color: $color__text;
+			background: $color__background-button;
+		}
+
+		&:hover,
+		&:focus {
+			background: darken($color__background-button, 10%);
+			color: $color__text;
+		}
+
+		&.current {
+			color: $color__white;
+			background: $color__primary;
+		}
+	}
+}
+
+.woocommerce-pagination {
+	ul.page-numbers {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		li {
+			margin: 0 0.5em 0 0;
+
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+
+		.page-numbers {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 55px;
+			height: 55px;
+			text-align: center;
+			color: $color__text;
+			background: $color__background-button;
+			float: left;
+
+
+			&:visited {
+				color: $color__text;
+				background: $color__background-button;
+			}
+
+			&:hover,
+			&:focus {
+				background: darken($color__background-button, 10%);
+				color: $color__text;
+			}
+
+			&.current {
+				color: $color__white;
+				background: $color__primary;
+			}
+		}
+	}
+
+}

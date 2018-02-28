@@ -1,0 +1,24 @@
+.zuul-featured {
+    .container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+
+        .zuul-featured-figure {
+            align-self: flex-end;
+
+            figure {
+                animation: fade_in 0.5s ease-in-out;
+                animation-fill-mode: forwards;
+                opacity: 0;
+            }
+        }
+    }
+    .zuul-button {
+        margin-top: 0;
+    }
+    .zuul-featured-content {
+        padding: 60px 0;
+    }
+}

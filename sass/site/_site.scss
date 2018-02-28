@@ -1,0 +1,39 @@
+/*--------------------------------------------------------------
+## Layout
+--------------------------------------------------------------*/
+@import "../layout/adjustments";
+@import "../layout/content";
+// @import "../layout/content-sidebar";
+// @import "../layout/sidebar-content";
+
+/*--------------------------------------------------------------
+## Tempaltes
+--------------------------------------------------------------*/
+@import "../templates/homepage";
+
+/*--------------------------------------------------------------
+## Tempalte Parts
+--------------------------------------------------------------*/
+@import "../template-parts/footer";
+@import "../template-parts/content";
+@import "../template-parts/content-hero";
+@import "../template-parts/content-featured";
+@import "../template-parts/content-callout";
+@import "../template-parts/content-product";
+@import "../template-parts/content-post";
+@import "../template-parts/content-feature";
+@import "../template-parts/content-testimonial";
+@import "../template-parts/comments";
+@import "../template-parts/content-none";
+@import "../template-parts/content-search";
+@import "../template-parts/content-end";
+
+/*--------------------------------------------------------------
+## Posts and pages
+--------------------------------------------------------------*/
+@import "primary/posts-and-pages";
+
+/*--------------------------------------------------------------
+## Comments
+--------------------------------------------------------------*/
+@import "primary/comments";

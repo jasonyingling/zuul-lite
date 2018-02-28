@@ -1,0 +1,24 @@
+body,
+button,
+input,
+select,
+optgroup,
+textarea {
+	color: $color__text-main;
+	font-family: $font__main;
+	@include font-size(1);
+	line-height: $font__line-height-body;
+
+	@include grid-media($break960) {
+        @include font-size(1.1875);
+    }
+}
+
+.nv-site-header {
+	font-family: $font__head;
+	font-weight: 300;
+}
+
+@import "headings";
+
+@import "copy";

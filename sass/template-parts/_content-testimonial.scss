@@ -1,0 +1,133 @@
+.zuul-testimonial-alt {
+    position: relative;
+    margin-bottom: 80px;
+
+    &.has-post-thumbnail {
+        .zuul-testimonial-alt-content {
+            margin-left: 40px;
+        }
+
+        .zuul-testimonial-alt--image {
+            width: 40%;
+            position: absolute;
+            bottom: 0;
+        }
+
+        .zuul-testimonial-alt-content--copy,
+        .zuul-testimonial-alt-content--footer {
+            width: calc( 60% - 25px );
+            float: right;
+            margin-left: 0;
+        }
+    }
+
+    .zuul-testimonial-alt-content {
+        background: $color__white;
+        padding: 20px;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        box-shadow: 0 2px 20px 2px rgba(0, 0, 0, 0.2);
+    }
+
+    .zuul-testimonial-alt-content--copy,
+    .zuul-testimonial-alt-content--footer {
+        margin-left: 30px;
+    }
+
+    .zuul-testimonial-alt-content--copy {
+        position: relative;
+
+        &:before {
+            @include font-size(7);
+            content: '“';
+            position: absolute;
+            top: -28px;
+            left: -27px;
+            opacity: .15;
+        }
+
+    }
+
+    .zuul-testimonial-alt-content--footer {
+        text-align: right;
+        align-self: flex-end;
+        flex: 0 1 100%;
+
+        .zuul-author-meta-testimonial {
+            display: block;
+            position: relative;
+
+            &:before {
+                //animation: back_and_forth 8s ease-in-out infinite;
+                content: '';
+                display: block;
+                width: 50px;
+                height: 2px;
+                background: $color__primary;
+                position: absolute;
+                top: -16px;
+                right: 0;
+            }
+        }
+    }
+}
+
+.zuul-testimonial {
+    @include gradient;
+    @include shadow();
+    transition: all 0.2s ease-in-out;
+    border-radius: 20px;
+    padding-top: 0.5em;
+    padding-bottom: 1em;
+    margin-bottom: 76px;
+    position: relative;
+    display: flex;
+    color: $color__white;
+
+    &:hover, &:focus {
+        @include biggerShadow();
+        transform: translateY(-0.25em);
+    }
+
+    h4 {
+        margin-top: 0.25em;
+    }
+
+    .zuul-author-name, a {
+        color: $color__white;
+
+        &.zuul-author-name {
+            &:hover, &:focus,
+            &:visited {
+                color: $color__white
+            }
+        }
+    }
+
+    .zuul-author-title {
+        color: $color__white;
+    }
+
+    .zuul-post-wrap {
+        padding: 1em 0 0;
+        z-index: 2;
+    }
+
+    .zuul-post-content {
+        margin-bottom: 6em;
+        padding: 0 2em 0 2em;
+        max-width: 460px;
+    }
+
+    .zuul-author-thumb {
+        margin-right: 1em;
+    }
+
+    .zuul-author-info {
+        padding: 1em 0;
+    }
+
+}

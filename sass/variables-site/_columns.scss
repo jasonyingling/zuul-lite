@@ -1,0 +1,115 @@
+$columns: (
+	1: 100%,
+	2: 50%,
+	3: 33.33%,
+	4: 25%,
+	5: 20%,
+	6: 16.66%,
+	7: 14.28%,
+	8: 12.5%,
+	9: 11.11%
+);
+
+$columns__margin: 5%;
+
+$neat-grid: (
+	columns: 12,
+	gutter: 20px,
+);
+
+$break640: (
+	columns: 12,
+	gutter: 40px,
+	media: 640px,
+);
+
+$break768: (
+	columns: 12,
+	gutter: 40px,
+	media: 768px,
+);
+
+$break960: (
+	columns: 12,
+	gutter: 40px,
+	media: 960px,
+);
+
+$break1024: (
+	columns: 12,
+	gutter: 40px,
+	media: 1024px,
+);
+
+.column-container {
+	@include grid-container;
+	@include grid-collapse;
+}
+
+.col2-set {
+	max-width: 100%;
+}
+
+.column-1,
+.col2-set .col-1,
+.col2-set .col-2 {
+	@include grid-column(12);
+
+	@include grid-media($break640){
+		@include grid-column(12);
+	}
+}
+
+.column-2 {
+	@include grid-column(12);
+
+	&:not(.zuul-testimonial-alt) {
+		@include grid-media($break640){
+			@include grid-column(6);
+		}
+	}
+
+	&.zuul-testimonial-alt {
+		@include grid-media($break768) {
+			@include grid-column(6);
+		}
+	}
+
+
+}
+
+.column-3 {
+	@include grid-column(12);
+
+	@include grid-media($break640) {
+		@include grid-column(6);
+	}
+
+	@include grid-media($break960) {
+		@include grid-column(4);
+	}
+}
+
+.column-4 {
+	@include grid-column(12);
+
+	@include grid-media($break640){
+		@include grid-column(3);
+	}
+}
+
+.column-5 {
+	@include grid-column(12);
+
+	@include grid-media($break640){
+		@include grid-column(2.4);
+	}
+}
+
+.column-6 {
+	@include grid-column(6);
+
+	@include grid-media($break640){
+		@include grid-column(2);
+	}
+}

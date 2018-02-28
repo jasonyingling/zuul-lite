@@ -1,0 +1,37 @@
+.nv-site-branding {
+    margin: 1.5em 0 1.5em;
+    flex: 0 1 auto;
+
+    img {
+        display: block;
+        max-width: 250px;
+
+        @include grid-media($break640) {
+            max-width: 300px;
+        }
+    }
+
+    a {
+        transition: all 0.25s ease-in-out;
+        color: $color__branding;
+        text-decoration: none;
+        display: block;
+        line-height: 1.25;
+
+        &:hover,
+        &:focus {
+            color: $color__nav-hover;
+        }
+    }
+}
+
+.nv-site-title {
+    @include font-size(2);
+    font-weight: 500;
+    margin: 0;
+}
+
+.nv-site-description {
+    margin: 0;
+    color: $color__branding;
+}

@@ -1,0 +1,107 @@
+.site-footer {
+    background: $color__text;
+    color: $color__white;
+    position: relative;
+
+    a {
+        color: $color__white;
+        position: relative;
+        text-decoration: none;
+
+        &:before {
+            transition: width .5s ease-in-out;
+            content: '';
+            height: 2px;
+            background: $color__primary;
+            width: 100%;
+            position: absolute;
+            bottom: -0.25em;
+        }
+
+        &:visited {
+            color: $color__white;
+        }
+
+        &:hover,
+        &:focus {
+            color: $color__primary;
+        }
+    }
+}
+
+.footer-menu {
+    text-align: right;
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    li {
+        float: left;
+        margin-right: 1em;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    a {
+        &:before {
+            display: none;
+        }
+    }
+}
+
+.footer-widgets {
+    display: flex;
+    padding: 2em 0 1em;
+    margin: 0 20px;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+
+    @include grid-media($break640) {
+        margin: 0 40px;
+    }
+}
+
+.footer-column {
+    padding-right: 2em;
+    flex: 0 1 auto;
+    width: 50%;
+
+    &:first-child,
+    &:last-child {
+        flex: 1 1 auto;
+    }
+
+    &:last-child {
+        padding-right: 0;
+    }
+
+    @include grid-media($break640) {
+        flex: 0 1 auto;
+        width: 25%;
+
+        &:last-child {
+            flex: 0 1 auto;
+        }
+    }
+}
+
+.site-info {
+    border-top: 1px dotted rgba(255,255,255,0.4);
+    margin: 0 20px;
+    padding: 2em 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    @include grid-media($break640) {
+        margin: 0 40px;
+    }
+}

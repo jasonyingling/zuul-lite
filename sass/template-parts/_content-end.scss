@@ -1,0 +1,42 @@
+.zuul-end-grid {
+    @include gradient;
+    @include shadow();
+    transition: all 0.2s ease-in-out;
+    display: flex;
+    align-items: center;
+    flex: 1 1 auto;
+    margin-right: 20px;
+    margin-bottom: 76px;
+    border-radius: 20px;
+
+    @include grid-media($break640) {
+        margin-right: 40px;
+    }
+
+    &:hover, &:focus {
+        @include biggerShadow();
+        transform: translateY(-0.25em);
+    }
+
+    .zuul-end-wrap {
+        padding: 1em 1em 2em;
+        text-align: center;
+        width: 100%;
+        color: $color__white;
+    }
+
+    .zuul-end-content {
+        max-width: 400px;
+        margin: 0 auto;
+
+        p {
+            margin-bottom: 1em;
+        }
+    }
+
+    .zuul-button {
+        display: inline-block;
+        margin: 0 auto;
+        float: none;
+    }
+}

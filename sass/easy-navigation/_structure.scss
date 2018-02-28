@@ -1,0 +1,136 @@
+// Width
+$nv_max_width: $ara_max_width;
+$nv_padding: $ara_padding;
+$nv_padding_mobile: $ara_padding_mobile;
+
+// Colors
+$color__nav: $color__white;
+$color__nav-hover: $color__text;
+$color__sub: $color__white;
+$color__sub-background: rgba(51,51,51,0.9);
+$color__branding: $color__white;
+
+.nv-site-header {
+    @include gradient;
+}
+
+.nv-container {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+    margin: 0 auto;
+    padding: 0 $nv_padding_mobile;
+
+    @include grid-media($break640) {
+        padding: 0 $nv_padding;
+    }
+}
+
+#content {
+    background: $color__white;
+}
+
+.site-header-bg {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+.wp-custom-header {
+    video,
+    img,
+    iframe {
+        position: fixed;
+    	height: auto;
+    	left: 50%;
+    	max-width: 1000%;
+    	min-height: 100%;
+    	min-width: 100%;
+    	min-width: 100vw; /* vw prevents 1px gap on left that 100% has */
+    	width: auto;
+    	top: 50%;
+    	padding-bottom: 1px; /* Prevent header from extending beyond the footer */
+    	-ms-transform: translateX(-50%) translateY(-50%);
+    	-moz-transform: translateX(-50%) translateY(-50%);
+    	-webkit-transform: translateX(-50%) translateY(-50%);
+    	transform: translateX(-50%) translateY(-50%);
+
+        @supports ( object-fit: cover ) {
+            height: 100%;
+    		left: 0;
+    		-o-object-fit: cover;
+    		object-fit: cover;
+    		top: 0;
+    		-ms-transform: none;
+    		-moz-transform: none;
+    		-webkit-transform: none;
+    		transform: none;
+    		width: 100%;
+        }
+    }
+
+    img {
+        position: absolute;
+        @include grid-media($break960) {
+            position: fixed;
+        }
+    }
+
+    .wp-custom-header-video-play,
+    .wp-custom-header-video-pause {
+        position: absolute;
+        bottom: 80px;
+        right: 10px;
+        background: transparent;
+        border: 0px;
+        padding: 0;
+        z-index: 3;
+
+        @include grid-media($break640) {
+            right: 20px;
+        }
+
+        &:hover, &:focus {
+            color: $color__white;
+            opacity: 0.5;
+        }
+    }
+}
+
+body:not(.page-template-template-homepage):not(.home) {
+    .wp-custom-header {
+        img {
+            bottom: 0;
+        	position: absolute;
+        	top: auto;
+        	-ms-transform: translateX(-50%) translateY(0);
+        	-moz-transform: translateX(-50%) translateY(0);
+        	-webkit-transform: translateX(-50%) translateY(0);
+        	transform: translateX(-50%) translateY(0);
+
+            @supports ( object-fit: cover ) {
+                height: 100%;
+        		left: 0;
+        		-o-object-fit: cover;
+        		object-fit: cover;
+        		top: 0;
+        		-ms-transform: none;
+        		-moz-transform: none;
+        		-webkit-transform: none;
+        		transform: none;
+        		width: 100%;
+            }
+        }
+    }
+}
