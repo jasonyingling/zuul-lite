@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 "Project-Id-Version: Zuul Lite\n"
-"POT-Creation-Date: 2018-02-18 21:16-0600\n"
-"PO-Revision-Date: 2018-02-18 21:16-0600\n"
+"POT-Creation-Date: 2018-03-09 00:00-0600\n"
+"PO-Revision-Date: 2018-03-09 00:00-0600\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -48,7 +48,7 @@ msgid_plural "%1$s replies to &ldquo;%2$s&rdquo;"
 msgstr[0] ""
 msgstr[1] ""
 
-#: comments.php:65
+#: comments.php:63
 msgid "Comments are closed."
 msgstr ""
 
@@ -70,32 +70,32 @@ msgid "Footer"
 msgstr ""
 
 #. Template Name of the plugin/theme
-#: functions.php:104
+#: functions.php:105
 msgid "Sidebar"
 msgstr ""
 
-#: functions.php:106 functions.php:115 functions.php:124 functions.php:133
-#: functions.php:142
+#: functions.php:107 functions.php:116 functions.php:125 functions.php:134
+#: functions.php:143
 msgid "Add widgets here."
 msgstr ""
 
-#: functions.php:113
+#: functions.php:114
 msgid "Footer Column 1"
 msgstr ""
 
-#: functions.php:122
+#: functions.php:123
 msgid "Footer Column 2"
 msgstr ""
 
-#: functions.php:131
+#: functions.php:132
 msgid "Footer Column 3"
 msgstr ""
 
-#: functions.php:140
+#: functions.php:141
 msgid "Footer Column 4"
 msgstr ""
 
-#: functions.php:267 template-parts/content-first-post.php:27
+#: functions.php:251 template-parts/content-first-post.php:27
 #: template-parts/content-sticky.php:29
 msgid "Read More"
 msgstr ""
@@ -147,9 +147,9 @@ msgstr ""
 #: inc/admin/updater/theme-updater-admin.php:18
 #, php-format
 msgid ""
-"Thanks for using %s. To get the most out of your theme check the <a href=\"%s"
-"\">Getting Started</a> page. For even more features and WooCommerce support "
-"go <a href=\"%s\">Pro</a>."
+"Thanks for using %1s. To get the most out of your theme check the <a href="
+"\"%2s\">Getting Started</a> page. For even more features and WooCommerce "
+"support go <a href=\"%3s\">Pro</a>."
 msgstr ""
 
 #. Theme Name of the plugin/theme
@@ -164,102 +164,102 @@ msgid ""
 "\">Themes.Pizza</a>."
 msgstr ""
 
-#: inc/admin/updater/theme-updater-admin.php:241
+#: inc/admin/updater/theme-updater-admin.php:244
 #, php-format
 msgid "Getting started with %1$s"
 msgstr ""
 
-#: inc/admin/updater/theme-updater-admin.php:243
+#: inc/admin/updater/theme-updater-admin.php:246
 msgid ""
 "Zuul Lite is just the beginning. Get even more out of your WordPress with "
 "Zuul Pro featuring WooCommerce support."
 msgstr ""
 
-#: inc/admin/updater/theme-updater-admin.php:252
+#: inc/admin/updater/theme-updater-admin.php:255
 msgid "Go Pro"
 msgstr ""
 
-#: inc/admin/updater/theme-updater-admin.php:253
+#: inc/admin/updater/theme-updater-admin.php:256
 msgid "Help File"
 msgstr ""
 
-#: inc/admin/updater/theme-updater-admin.php:254
+#: inc/admin/updater/theme-updater-admin.php:257
 msgid "Plugins"
 msgstr ""
 
-#: inc/admin/updater/theme-updater-admin.php:263
+#: inc/admin/updater/theme-updater-admin.php:266
 msgid "Unlock the gateway to more features"
 msgstr ""
 
-#: inc/admin/updater/theme-updater-admin.php:265
+#: inc/admin/updater/theme-updater-admin.php:268
 msgid ""
 "Get even more out of Zuul by going Pro. Add WooCommerce support to start "
 "selling products today. And make Zuul even more customizable with Advanced "
 "Custom Fields support. Plus get access to premium support."
 msgstr ""
 
-#: inc/admin/updater/theme-updater-admin.php:287
+#: inc/admin/updater/theme-updater-admin.php:290
 msgid "More information coming soon!"
 msgstr ""
 
-#: inc/admin/updater/theme-updater-admin.php:287
+#: inc/admin/updater/theme-updater-admin.php:290
 msgid "Upgrade to Zuul Pro &rarr;"
 msgstr ""
 
-#: inc/admin/updater/theme-updater-admin.php:317
+#: inc/admin/updater/theme-updater-admin.php:320
 msgid ""
 "This help file feed seems to be temporarily down. You can always view the "
 "help file online in the meantime."
 msgstr ""
 
-#: inc/admin/updater/theme-updater-admin.php:317
+#: inc/admin/updater/theme-updater-admin.php:320
 msgid "Help File &rarr;"
 msgstr ""
 
-#: inc/admin/updater/theme-updater-admin.php:327
+#: inc/admin/updater/theme-updater-admin.php:330
 msgid "Recommended Plugins"
 msgstr ""
 
-#: inc/admin/updater/theme-updater-admin.php:329
+#: inc/admin/updater/theme-updater-admin.php:332
 msgid ""
 "Below is a list of recommended plugins to help you get the most out of the "
 "Zuul Theme. Each plugin is optional, but may be required to fully recreate "
 "the demo version of the site."
 msgstr ""
 
-#: inc/admin/updater/theme-updater-admin.php:457
+#: inc/admin/updater/theme-updater-admin.php:458
 msgid "Error"
 msgstr ""
 
-#: inc/admin/updater/theme-updater-admin.php:488
-#: inc/admin/updater/theme-updater-admin.php:535
-#: inc/admin/updater/theme-updater-admin.php:588
+#: inc/admin/updater/theme-updater-admin.php:489
+#: inc/admin/updater/theme-updater-admin.php:536
+#: inc/admin/updater/theme-updater-admin.php:589
 msgid "An error occurred, please try again."
 msgstr ""
 
-#: inc/admin/updater/theme-updater-admin.php:502
+#: inc/admin/updater/theme-updater-admin.php:503
 #, php-format
 msgid "Your license key expired on %s."
 msgstr ""
 
-#: inc/admin/updater/theme-updater-admin.php:509
+#: inc/admin/updater/theme-updater-admin.php:510
 msgid "Your license key has been disabled."
 msgstr ""
 
-#: inc/admin/updater/theme-updater-admin.php:514
+#: inc/admin/updater/theme-updater-admin.php:515
 msgid "Invalid license."
 msgstr ""
 
-#: inc/admin/updater/theme-updater-admin.php:520
+#: inc/admin/updater/theme-updater-admin.php:521
 msgid "Your license is not active for this URL."
 msgstr ""
 
-#: inc/admin/updater/theme-updater-admin.php:525
+#: inc/admin/updater/theme-updater-admin.php:526
 #, php-format
 msgid "This appears to be an invalid license key for %s."
 msgstr ""
 
-#: inc/admin/updater/theme-updater-admin.php:530
+#: inc/admin/updater/theme-updater-admin.php:531
 msgid "Your license key has reached its activation limit."
 msgstr ""
 
@@ -362,7 +362,7 @@ msgstr ""
 #, php-format
 msgid ""
 "<strong>%1$s %2$s</strong> is available. <a href=\"%3$s\" class=\"thickbox\" "
-"title=\"%4s\">Check out what's new</a> or <a href=\"%5$s\"%6$s>update now</"
+"title=\"%4$s\">Check out what's new</a> or <a href=\"%5$s\"%6$s>update now</"
 "a>."
 msgstr ""
 
@@ -416,91 +416,71 @@ msgstr ""
 msgid "Enter text for the front page title."
 msgstr ""
 
-#: inc/customizer.php:229
+#: inc/customizer.php:227
 msgid "Front Page Description"
 msgstr ""
 
-#: inc/customizer.php:230
+#: inc/customizer.php:228
 msgid "Enter text for the front page description."
 msgstr ""
 
-#: inc/customizer.php:253 inc/customizer.php:353
+#: inc/customizer.php:249
 msgid "Button URL"
 msgstr ""
 
-#: inc/customizer.php:254 inc/customizer.php:354
+#: inc/customizer.php:250
 msgid "Enter a URL for the button."
 msgstr ""
 
-#: inc/customizer.php:268 inc/customizer.php:368
+#: inc/customizer.php:264
 msgid "Button Text"
 msgstr ""
 
-#: inc/customizer.php:269 inc/customizer.php:369
+#: inc/customizer.php:265
 msgid "Enter text for the button."
 msgstr ""
 
-#: inc/customizer.php:290
-msgid "After Loop Callout"
-msgstr ""
-
-#: inc/customizer.php:301
-msgid "Show callout after Portfolio"
-msgstr ""
-
-#: inc/customizer.php:315 inc/customizer.php:330
-msgid "Callout Text"
-msgstr ""
-
-#: inc/customizer.php:316
-msgid "Enter title for the callout."
-msgstr ""
-
-#: inc/customizer.php:331
-msgid "Enter text for the callout."
-msgstr ""
-
-#: inc/customizer.php:391
+#: inc/customizer.php:284
 msgid "Front Page Sections"
 msgstr ""
 
 #. translators: %d is the front page section number
-#: inc/customizer.php:410
+#: inc/customizer.php:303
 #, php-format
 msgid "Front Page Section %d Content"
 msgstr ""
 
-#: inc/customizer.php:411
+#: inc/customizer.php:304
 msgid ""
 "Select pages to feature in each area from the dropdowns. Empty sections will "
 "not be displayed."
 msgstr ""
 
-#: inc/customizer.php:438
+#: inc/customizer.php:331
 msgid "Number of portfolio items to show:"
 msgstr ""
 
-#: inc/customizer.php:470
+#: inc/customizer.php:363
 msgid "Number of testimonials to show:"
 msgstr ""
 
-#: inc/customizer.php:502
+#: inc/customizer.php:395
 msgid "Number of blog posts to show:"
 msgstr ""
 
-#: inc/customizer.php:533
+#: inc/customizer.php:426
 msgid "Number of features to show:"
 msgstr ""
 
-#: inc/customizer.php:538
+#: inc/customizer.php:431
 msgid "Show All"
 msgstr ""
 
-#: inc/customizer.php:564
+#: inc/customizer.php:457
 msgid "Mobile Navigation Control"
 msgstr ""
 
-#: inc/customizer.php:565
+#: inc/customizer.php:458
 msgid ""
 "Set the width at which point the mobile menu button shows and the main "
 "navigation disappears."
@@ -508,6 +488,14 @@ msgstr ""
 
 #: inc/jetpack.php:69
 msgid "More Posts"
+msgstr ""
+
+#: inc/template-tags.php:15 inc/template-tags.php:17
+msgid "Published: "
+msgstr ""
+
+#: inc/template-tags.php:17
+msgid "Updated: "
 msgstr ""
 
 #. translators: used between list items, there is a space after the comma
@@ -528,38 +516,42 @@ msgid "Leave a Comment<span class=\"screen-reader-text\"> on %s</span>"
 msgstr ""
 
 #. translators: %s: Name of current post. Only visible to screen readers
-#: inc/template-tags.php:85 template-parts/content-page.php:59
+#: inc/template-tags.php:85 template-parts/content-page.php:53
 #, php-format
 msgid "Edit <span class=\"screen-reader-text\">%s</span>"
 msgstr ""
 
-#: inc/template-tags.php:179
+#: inc/template-tags.php:216
+msgid "Related Posts"
+msgstr ""
+
+#: inc/template-tags.php:256
 msgid "<i class=\"fa fa-long-arrow-left\" aria-hidden=\"true\"></i>"
 msgstr ""
 
-#: inc/template-tags.php:180
+#: inc/template-tags.php:257
 msgid "<i class=\"fa fa-long-arrow-right\" aria-hidden=\"true\"></i>"
 msgstr ""
 
-#: inc/template-tags.php:308
+#: inc/template-tags.php:383
 msgid "Your comment is awaiting moderation."
 msgstr ""
 
 #. translators: 1: date, 2: time
-#: inc/template-tags.php:325
+#: inc/template-tags.php:400
 #, php-format
 msgid "%1$s at %2$s"
 msgstr ""
 
-#: inc/template-tags.php:325
+#: inc/template-tags.php:400
 msgid "(Edit)"
 msgstr ""
 
-#: inc/template-tags.php:460
+#: inc/template-tags.php:535
 msgid "See the rest"
 msgstr ""
 
-#: inc/template-tags.php:472
+#: inc/template-tags.php:547
 #, php-format
 msgid "Section %1$s Placeholder"
 msgstr ""
@@ -574,14 +566,22 @@ msgid ""
 "<a class=\"button\" href=\"%s\">Set up your homepage sections &rarr;</a>"
 msgstr ""
 
+#: page-templates/template-portfolio.php:26
+msgid "All"
+msgstr ""
+
 #. translators: %s: search query.
 #: search.php:24
 #, php-format
 msgid "Search Results for: %s"
 msgstr ""
 
-#: template-parts/content-loop.php:71 template-parts/content-page.php:42
-#: template-parts/content-sidebar.php:48 template-parts/content.php:76
+#: template-parts/content-loop.php:49
+msgid "Read more"
+msgstr ""
+
+#: template-parts/content-loop.php:52 template-parts/content-page.php:36
+#: template-parts/content-sidebar.php:48 template-parts/content.php:79
 msgid "Pages:"
 msgstr ""
 

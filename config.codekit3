@@ -7,7 +7,7 @@
 		"uuidString": "EBE1CF4F-A353-4461-93E8-A49F53B4DA70"
 		}
 	],
-"creatorBuild": "26268",
+"creatorBuild": "26330",
 "files": {
 	"\/.gitignore": {
 		"cB": 0,
@@ -354,6 +354,36 @@
 		"oA": 0,
 		"oAP": "\/inc\/admin\/getting-started\/min\/getting-started-min.js",
 		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/inc\/admin\/getting-started\/jquery.form.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/inc\/admin\/getting-started\/min\/jquery.form-min.js",
+		"oF": 3,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/inc\/admin\/getting-started\/jquery.validate.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/inc\/admin\/getting-started\/min\/jquery.validate-min.js",
+		"oF": 3,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/inc\/admin\/getting-started\/zuul-form.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/inc\/admin\/getting-started\/min\/zuul-form-min.js",
+		"oF": 3,
 		"sC": 1,
 		"tS": 0
 		},
@@ -1613,20 +1643,6 @@
 		"oAP": "\/template-parts\/content-blog.php",
 		"oF": 0
 		},
-	"\/template-parts\/content-callout.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/template-parts\/content-callout.php",
-		"oF": 0
-		},
-	"\/template-parts\/content-end-cap.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/template-parts\/content-end-cap.php",
-		"oF": 0
-		},
 	"\/template-parts\/content-feature.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -1702,6 +1718,13 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/template-parts\/content-projects.php",
+		"oF": 0
+		},
+	"\/template-parts\/content-related-post.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/template-parts\/content-related-post.php",
 		"oF": 0
 		},
 	"\/template-parts\/content-search.php": {

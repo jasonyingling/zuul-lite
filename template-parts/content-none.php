@@ -9,10 +9,10 @@
 
 ?>
 
-<section class="no-results not-found column-1 content-with-sidebar">
+<section class="no-results not-found content-with-sidebar">
 
 	<div class="sidebar-content">
-		
+
 		<header class="page-header">
 			<h1 class="page-title"><?php esc_html_e( 'Nothing Found', 'zuul-lite' ); ?></h1>
 		</header><!-- .page-header -->

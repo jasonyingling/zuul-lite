@@ -183,7 +183,6 @@ add_action( 'admin_init', 'zuul_theme_add_editor_styles' );
  * Load theme updater functions.
  * Action is used so that child themes can easily disable.
  */
-
 function zuul_theme_updater() {
 	define('CNKT_INSTALLER_PATH', get_template_directory_uri() .'/inc/admin/connekt-plugin-installer/');
 	include_once( get_template_directory() . '/inc/admin/connekt-plugin-installer/class-connekt-plugin-installer.php');

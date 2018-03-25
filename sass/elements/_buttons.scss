@@ -1,5 +1,5 @@
 .zuul-button {
-    @include font-size(1.25);
+    @include font-size(1);
     transition: all 0.25s ease-in-out;
     font-family: $font__head;
     font-weight: 300;
@@ -16,7 +16,7 @@
     flex: 0 0 auto;
 
     @include grid-media($break960) {
-        @include font-size(1.5);
+        @include font-size(1.414);
     }
 
     &:visited {
@@ -148,7 +148,7 @@
 
 .post-navigation {
     max-width: 768px;
-    margin: 0 auto;
+    margin: 40px auto 0;
 }
 
 .nav-links {
@@ -170,7 +170,7 @@
 }
 
 .zuul-more {
-    @include font-size(1.5);
+    @include font-size(1.414);
 }
 
 .zuul-more,
@@ -216,7 +216,7 @@
         width: 0%;
         position: absolute;
         bottom: -0.25em;
-        left: 0;
+        right: 0;
     }
 
     &:before {
@@ -256,7 +256,7 @@
         background: transparent;
 
         button {
-            @include font-size(1.5);
+            @include font-size(1.414);
             font-family: $font__head;
             font-weight: 300;
             display: block;

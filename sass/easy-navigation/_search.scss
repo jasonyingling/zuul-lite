@@ -17,7 +17,7 @@
     }
 
     input[type="search"] {
-        @include font-size(1.5);
+        @include font-size(1.414);
         padding: 1em;
         border-radius: 0;
         background: transparent;
@@ -44,7 +44,7 @@
     }
 
     .search-submit {
-        @include font-size(1.25);
+        @include font-size(1.414);
         transition: all 0.25s ease-in-out;
         color: $color__nav;
         box-shadow: none;

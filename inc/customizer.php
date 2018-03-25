@@ -39,13 +39,6 @@ function zuul_sanitize_range( $input ) {
 }
 
 /**
- * Sanitize text
- */
-function zuul_sanitize_text( $input ) {
-	return wp_kses_post( force_balance_tags( $input ) );
-}
-
-/**
  * Sanitize checkbox
  */
 function zuul_sanitize_checkbox( $input ) {
@@ -198,7 +191,7 @@ function zuul_customize_register( $wp_customize ) {
 
     $wp_customize->add_setting( 'zuul_hero_title', array(
  	    'default'           => get_bloginfo('name'),
-        'sanitize_callback' => 'zuul_sanitize_text',
+        'sanitize_callback' => 'sanitize_text_field',
         'transport'         => 'postMessage',
  	) );
 
@@ -214,14 +207,12 @@ function zuul_customize_register( $wp_customize ) {
     $wp_customize->selective_refresh->add_partial( 'zuul_hero_title', array(
         'selector' => '.zuul-hero-title',
         'container_inclusive' => false,
-        'render_callback' => function() {
-			return get_theme_mod( 'zuul_hero_title' );
-        },
+        'render_callback' => 'zuul_hero_title_partial',
     ) );
 
     $wp_customize->add_setting( 'zuul_hero_desc', array(
  	    'default'           => get_bloginfo('description'),
-        'sanitize_callback' => 'zuul_sanitize_text',
+        'sanitize_callback' => 'sanitize_text_field',
         'transport'         => 'postMessage',
  	) );
 
@@ -237,9 +228,7 @@ function zuul_customize_register( $wp_customize ) {
     $wp_customize->selective_refresh->add_partial( 'zuul_hero_desc', array(
         'selector' => '.zuul-hero-desc',
         'container_inclusive' => false,
-        'render_callback' => function() {
-			return get_theme_mod( 'zuul_hero_desc' );
-        },
+        'render_callback' => 'zuul_hero_desc_partial',
     ) );
 
 
@@ -260,7 +249,7 @@ function zuul_customize_register( $wp_customize ) {
 
 	$wp_customize->add_setting( 'zuul_hero_cta', array(
 		'default'           => '',
-		'sanitize_callback' => 'zuul_sanitize_text',
+		'sanitize_callback' => 'sanitize_text_field',
 		'transport'         => 'refresh',
 	) );
 
@@ -276,9 +265,7 @@ function zuul_customize_register( $wp_customize ) {
     $wp_customize->selective_refresh->add_partial( 'zuul_hero_cta', array(
         'selector' => '.zuul-hero-copy .zuul-button',
         'container_inclusive' => false,
-        'render_callback' => function() {
-			return get_theme_mod( 'zuul_herzuul_hero_ctao_title' );
-        },
+        'render_callback' => 'zuul_hero_cta_partial',
     ) );
 
 	/**
@@ -687,6 +674,87 @@ function zuul_customize_partial_blogname() {
  */
 function zuul_customize_partial_blogdescription() {
 	bloginfo( 'description' );
+}
+
+/**
+ * Render the hero title for the selective refresh partial.
+ *
+ * @return void
+ */
+function zuul_hero_title_partial() {
+    return get_theme_mod( 'zuul_hero_title' );
+}
+
+/**
+ * Render the hero description for the selective refresh partial.
+ *
+ * @return void
+ */
+function zuul_hero_desc_partial() {
+    return get_theme_mod( 'zuul_hero_desc' );
+}
+
+/**
+ * Render the hero cta for the selective refresh partial.
+ *
+ * @return void
+ */
+function zuul_hero_cta_partial() {
+    return get_theme_mod( 'zuul_hero_cta' );
+}
+
+/**
+ * Render the feaftured button text for the selective refresh partial.
+ *
+ * @return void
+ */
+function featured_button_text_partial() {
+    return get_theme_mod( 'featured_button_text' );
+}
+
+/**
+ * Render the featured section image for the selective refresh partial.
+ *
+ * @return void
+ */
+function featured_section_image_partial() {
+    return wp_get_attachment_image( get_theme_mod( 'featured_section_image' ), 'full' );
+}
+
+/**
+ * Render the featured section title for the selective refresh partial.
+ *
+ * @return void
+ */
+function featured_section_title_partial() {
+    return get_theme_mod( 'featured_section_title' );
+}
+
+/**
+ * Render the featured section copy for the selective refresh partial.
+ *
+ * @return void
+ */
+function featured_section_copy_partial() {
+    return get_theme_mod( 'featured_section_copy' );
+}
+
+/**
+ * Render the callout section text for the selective refresh partial.
+ *
+ * @return void
+ */
+function callout_section_text_partial() {
+    return get_theme_mod( 'callout_section_text' );
+}
+
+/**
+ * Render the callout button text for the selective refresh partial.
+ *
+ * @return void
+ */
+function callout_button_text_partial() {
+    return get_theme_mod( 'callout_button_text' );
 }
 
 /**

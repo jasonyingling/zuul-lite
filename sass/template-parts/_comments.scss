@@ -17,9 +17,19 @@
     font-weight: 300;
 }
 
+.comment-navigation {
+    max-width: 892px;
+    margin: 0 auto;
+
+    .nav-links {
+        padding-bottom: 0;
+    }
+}
+
+
 .comment-list {
     list-style-type: none;
-    padding: 2em 0 1em;
+    padding: 0 0 1em;
     margin: 0 auto;
     max-width: 892px;
     border: 1px solid $color__background-alt;

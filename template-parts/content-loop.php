@@ -19,9 +19,12 @@
 
 	<div class="zuul-section-title">
 		<?php if ( 'post' === get_post_type() ) : ?>
-		<div class="entry-categories">
-			<?php echo get_the_category_list(); ?>
-		</div><!-- .entry-meta -->
+			<div class="entry-categories">
+				<?php $cats = get_the_category(); ?>
+				<ul class="post-categories">
+					<li><a href="<?php echo get_term_link( $cats[0], 'category' ); ?>"><?php echo esc_html( $cats[0]->name ); ?></a></li>
+				</ul>
+			</div><!-- .entry-meta -->
 		<?php endif; ?>
 
 		<div class="zuul-intro">

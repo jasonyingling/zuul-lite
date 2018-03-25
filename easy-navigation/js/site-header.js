@@ -6,7 +6,7 @@ jQuery(document).ready(function($){
 		navbar: {
 			title: "Menu",
 		},
-	    extensions: ["shadow-page", "fx-menu-slide", "fx-listitems-slide", "theme-dark"]
+	    extensions: ["pageshadow", "effect-slide-menu", "effect-slide-listitems", "theme-dark"]
 	});
 
     var mmenuAPI = $('#mobile-navigation').data('mmenu');
@@ -16,6 +16,19 @@ jQuery(document).ready(function($){
             mmenuAPI.close();
         }
     } );
+
+    /*
+     * WordPress wrapper for jQuery mmenu
+     * Include this file after including the jquery.mmenu plugin for default WordPress support.
+     */
+
+	var _PLUGIN_ = 'mmenu';
+
+	$[ _PLUGIN_ ].configuration.classNames.selected = 'current-menu-item';
+
+	$("#wpadminbar")
+		.css( 'position', 'fixed' )
+		.addClass( 'mm-slideout' );
 
     $('.js-open-site-search').click(function() {
         openSearch(this);

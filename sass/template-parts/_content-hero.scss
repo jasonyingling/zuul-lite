@@ -7,12 +7,12 @@
         padding-bottom: 3em;
 
         @include grid-media($break960) {
-            min-height: 450px;
+            min-height: 400px;
             max-height: 40vh;
         }
 
         @include grid-media($break960) {
-            min-height: 600px;
+            min-height: 520px;
             max-height: 80vh;
         }
     }
@@ -26,7 +26,7 @@
     animation-fill-mode: forwards;
     width: 100%;
     color: $color__white;
-    padding: 5em 0 7em;
+    padding: 5em 0 6em;
     transform: translateY(-2em);
 
     .zuul-button {
@@ -37,16 +37,12 @@
 
 .zuul-hero-title {
     animation: hero_text 0.5s ease-in-out;
-    @include font-size(3);
+    @include font-size(3.998);
     line-height: 1.25;
     margin: 0;
 
-    @include grid-media($break768) {
-		@include font-size(4);
-	}
-
     @include grid-media($break960) {
-        @include font-size(5.5);
+        @include font-size(4.705);
     }
 }
 
@@ -54,13 +50,9 @@
     font-family: $font__main;
     font-weight: 400;
     animation: hero_text 0.75s ease-in-out;
-    @include font-size(1.25);
+    @include font-size(1.414);
     line-height: 1.25;
-    margin: 1em 0 1.5em;
-
-    @include grid-media($break768) {
-		@include font-size(1.5);
-	}
+    margin: .707em 0 1.5em;
 }
 
 .zuul-angle {

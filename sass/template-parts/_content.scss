@@ -78,7 +78,7 @@
     @include font-size(2.5);
 
     @include grid-media($break768) {
-        @include font-size(3);
+        @include font-size(2.827);
     }
 
     @include grid-media($break960) {
@@ -88,7 +88,8 @@
 
 .zuul-hp-loop {
 
-    .has-post-thumbnail {
+    .has-post-thumbnail,
+    .zuul-related {
         .zuul-section-title {
             transform: translateY(-50px);
 
@@ -113,10 +114,10 @@
         padding: 0;
 
         .entry-title {
-            @include font-size(2);
+            @include font-size(1.999);
 
             @include grid-media($break640) {
-                @include font-size(3);
+                @include font-size(2.827);
             }
 
             a {
@@ -129,7 +130,7 @@
 
 .hp-content {
     margin: 0 20px;
-    
+
     @include grid-media($break640) {
         margin: 0 60px;
     }
@@ -154,9 +155,14 @@
         }
     }
 
+    .zuul-featured-related {
+        @include gradient();
+        min-height: 120px;
+    }
+
     .zuul-intro {
         .entry-title {
-            @include font-size(2);
+            @include font-size(1.999);
         }
     }
 }
@@ -171,10 +177,10 @@
         padding: 0;
 
         .entry-title {
-            @include font-size(2);
+            @include font-size(1.999);
 
             @include grid-media($break640) {
-                @include font-size(3);
+                @include font-size(2.827);
             }
         }
     }
@@ -407,7 +413,7 @@
 
     .zuul-single-author-bio {
         @include gradient();
-        @include font-size(1.5);
+        @include font-size(1.414);
         color: $color__white;
         padding: 40px 60px 80px;
         border-radius: 5px 5px 0 0;
@@ -485,7 +491,6 @@
         // Using inset box-shadow instead of border for sizing simplicity
         box-shadow: inset 0 0 0 3px #f4f4f4;
         font-size: inherit;
-        font-weight: 700;
 
         // Required, since we're setting absolute on pseudo-elements
         position: relative;

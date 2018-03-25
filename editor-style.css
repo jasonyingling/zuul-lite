@@ -191,7 +191,7 @@ select,
 optgroup,
 textarea {
   color: #404040;
-  font-family: "Didact Gothic", sans-serif;
+  font-family: "Rubik", sans-serif;
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5; }
@@ -231,23 +231,23 @@ h1 {
   font-size: 2.5rem; }
   @media only screen and (min-width: 768px) {
     h1 {
-      font-size: 48px;
-      font-size: 3rem; } }
+      font-size: 45.232px;
+      font-size: 2.827rem; } }
   @media only screen and (min-width: 960px) {
     h1 {
-      font-size: 64px;
-      font-size: 4rem; } }
+      font-size: 63.968px;
+      font-size: 3.998rem; } }
   h1.archive-title {
-    font-size: 20px;
-    font-size: 1.25rem; }
+    font-size: 22.624px;
+    font-size: 1.414rem; }
     @media only screen and (min-width: 768px) {
       h1.archive-title {
         font-size: 28px;
         font-size: 1.75rem; } }
     @media only screen and (min-width: 960px) {
       h1.archive-title {
-        font-size: 32px;
-        font-size: 2rem; } }
+        font-size: 45.232px;
+        font-size: 2.827rem; } }
 
 h2 {
   font-size: 28px;
@@ -255,56 +255,56 @@ h2 {
   line-height: 1.25; }
   @media only screen and (min-width: 768px) {
     h2 {
-      font-size: 32px;
-      font-size: 2rem; } }
+      font-size: 31.984px;
+      font-size: 1.999rem; } }
   @media only screen and (min-width: 960px) {
     h2 {
-      font-size: 48px;
-      font-size: 3rem; } }
+      font-size: 45.232px;
+      font-size: 2.827rem; } }
 
 h3 {
-  font-size: 20px;
-  font-size: 1.25rem;
+  font-size: 22.624px;
+  font-size: 1.414rem;
   line-height: 1.25; }
   @media only screen and (min-width: 768px) {
     h3 {
-      font-size: 24px;
-      font-size: 1.5rem; } }
+      font-size: 22.624px;
+      font-size: 1.414rem; } }
   @media only screen and (min-width: 960px) {
     h3 {
-      font-size: 32px;
-      font-size: 2rem; } }
+      font-size: 31.984px;
+      font-size: 1.999rem; } }
 
 h4 {
-  font-size: 24px;
-  font-size: 1.5rem;
+  font-size: 22.624px;
+  font-size: 1.414rem;
   line-height: 1.25; }
   @media only screen and (min-width: 960px) {
     h4 {
-      font-size: 32px;
-      font-size: 2rem; } }
+      font-size: 22.624px;
+      font-size: 1.414rem; } }
 
 h5 {
-  font-size: 24px;
-  font-size: 1.5rem;
+  font-size: 22.624px;
+  font-size: 1.414rem;
   line-height: 1.25; }
   @media only screen and (min-width: 960px) {
     h5 {
-      font-size: 20px;
-      font-size: 1.25rem; } }
+      font-size: 22.624px;
+      font-size: 1.414rem; } }
 
 h6 {
-  font-size: 20px;
-  font-size: 1.25rem;
+  font-size: 22.624px;
+  font-size: 1.414rem;
   text-transform: uppercase;
   color: #9599e2;
   line-height: 1.25; }
 
 .zuul-bigger-content p {
-  font-family: "Didact Gothic", sans-serif;
+  font-family: "Rubik", sans-serif;
   font-weight: 400;
-  font-size: 20px;
-  font-size: 1.25rem;
+  font-size: 22.624px;
+  font-size: 1.414rem;
   line-height: 1.75; }
 
 p {
@@ -383,9 +383,13 @@ main {
   background: #fff198; }
 
 .pull-left, .pull-right {
-  width: 32%;
-  padding: 20px;
+  width: 42%;
+  padding: 10px;
   background: #f4f4f4; }
+  @media only screen and (min-width: 640px) {
+    .pull-left, .pull-right {
+      width: 32%;
+      padding: 20px; } }
 
 .pull-left {
   float: left;
@@ -404,17 +408,20 @@ main {
 
 blockquote {
   quotes: "" "";
-  padding: 1em 0 0.5em 3em;
+  padding: 1em 0 0.5em 2em;
   position: relative;
-  font-size: 24px;
-  font-size: 1.5rem; }
+  font-size: 22.624px;
+  font-size: 1.414rem; }
+  @media only screen and (min-width: 640px) {
+    blockquote {
+      padding: 1em 0 0.5em 3em; } }
   blockquote:before {
     content: '\201C';
     font-size: 80px;
     font-size: 5rem;
     display: block;
     position: absolute;
-    top: 21px;
+    top: 18px;
     left: 0; }
   blockquote:after {
     background-color: #8BC6EC;
@@ -482,8 +489,8 @@ th, td {
   padding: 0.5em; }
 
 .zuul-button {
-  font-size: 20px;
-  font-size: 1.25rem;
+  font-size: 16px;
+  font-size: 1rem;
   transition: all 0.25s ease-in-out;
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
@@ -500,8 +507,8 @@ th, td {
   flex: 0 0 auto; }
   @media only screen and (min-width: 960px) {
     .zuul-button {
-      font-size: 24px;
-      font-size: 1.5rem; } }
+      font-size: 22.624px;
+      font-size: 1.414rem; } }
   .zuul-button:visited {
     color: #9599e2; }
     .zuul-button:visited:hover, .zuul-button:visited:focus {
@@ -592,7 +599,7 @@ th, td {
 
 .post-navigation {
   max-width: 768px;
-  margin: 0 auto; }
+  margin: 40px auto 0; }
 
 .nav-links {
   display: flex;
@@ -608,8 +615,8 @@ th, td {
     text-align: right; }
 
 .zuul-more {
-  font-size: 24px;
-  font-size: 1.5rem; }
+  font-size: 22.624px;
+  font-size: 1.414rem; }
 
 .zuul-more,
 .nav-next a {
@@ -649,7 +656,7 @@ th, td {
     width: 0%;
     position: absolute;
     bottom: -0.25em;
-    left: 0; }
+    right: 0; }
   .nav-previous a:before {
     font-family: FontAwesome;
     font-weight: 500;
@@ -677,8 +684,8 @@ th, td {
   margin: 0 auto;
   background: transparent; }
   #zuul-infinite #infinite-handle span button {
-    font-size: 24px;
-    font-size: 1.5rem;
+    font-size: 22.624px;
+    font-size: 1.414rem;
     font-family: "Montserrat", sans-serif;
     font-weight: 300;
     display: block;
@@ -1001,33 +1008,46 @@ a.zuul-alt {
   font-size: 2.5rem; }
   @media only screen and (min-width: 768px) {
     .entry-title {
-      font-size: 48px;
-      font-size: 3rem; } }
+      font-size: 45.232px;
+      font-size: 2.827rem; } }
   @media only screen and (min-width: 960px) {
     .entry-title {
       font-size: 64px;
       font-size: 4rem; } }
 
-.zuul-hp-loop .has-post-thumbnail .zuul-section-title {
+.zuul-hp-loop .has-post-thumbnail .zuul-section-title,
+.zuul-hp-loop .zuul-related .zuul-section-title {
   transform: translateY(-50px); }
-  .zuul-hp-loop .has-post-thumbnail .zuul-section-title .zuul-author-meta {
+  .zuul-hp-loop .has-post-thumbnail .zuul-section-title .zuul-author-meta,
+  .zuul-hp-loop .zuul-related .zuul-section-title .zuul-author-meta {
     margin-bottom: 10px; }
 
 .zuul-hp-loop .zuul-section-title {
-  margin: 0 30px;
+  margin: 0 20px;
   padding: 13px 20px 20px;
   background: #ffffff; }
+  @media only screen and (min-width: 640px) {
+    .zuul-hp-loop .zuul-section-title {
+      margin: 0 30px; } }
 
 .zuul-hp-loop .zuul-intro {
-  margin: 0 0 20px; }
+  margin: 0 0 20px;
+  padding: 0; }
   .zuul-hp-loop .zuul-intro .entry-title {
-    font-size: 48px;
-    font-size: 3rem; }
+    font-size: 31.984px;
+    font-size: 1.999rem; }
+    @media only screen and (min-width: 640px) {
+      .zuul-hp-loop .zuul-intro .entry-title {
+        font-size: 45.232px;
+        font-size: 2.827rem; } }
     .zuul-hp-loop .zuul-intro .entry-title a {
       color: #333333; }
 
 .hp-content {
-  margin: 0 60px; }
+  margin: 0 20px; }
+  @media only screen and (min-width: 640px) {
+    .hp-content {
+      margin: 0 60px; } }
 
 .zuul-related-posts {
   margin-left: -20px;
@@ -1045,16 +1065,28 @@ a.zuul-alt {
   @supports (transform: translateY(-20px)) {
     .zuul-related-posts article {
       margin-bottom: -50px; } }
+  .zuul-related-posts .zuul-featured-related {
+    background-color: #8BC6EC;
+    background-image: linear-gradient(284deg, #8BC6EC 0%, #9599E2 100%);
+    min-height: 120px; }
   .zuul-related-posts .zuul-intro .entry-title {
-    font-size: 32px;
-    font-size: 2rem; }
+    font-size: 31.984px;
+    font-size: 1.999rem; }
 
 .zuul-loop-post {
   width: 100%;
   max-width: 1280px;
   margin: 0 auto 120px; }
   .zuul-loop-post .zuul-intro {
-    margin: 0 0 30px; }
+    margin: 0 0 30px;
+    padding: 0; }
+    .zuul-loop-post .zuul-intro .entry-title {
+      font-size: 31.984px;
+      font-size: 1.999rem; }
+      @media only screen and (min-width: 640px) {
+        .zuul-loop-post .zuul-intro .entry-title {
+          font-size: 45.232px;
+          font-size: 2.827rem; } }
   .zuul-loop-post:first-child {
     padding-top: 30px; }
   .zuul-loop-post.has-post-thumbnail .zuul-section-title {
@@ -1062,9 +1094,12 @@ a.zuul-alt {
     .zuul-loop-post.has-post-thumbnail .zuul-section-title .zuul-author-meta {
       margin-bottom: -30px; }
   .zuul-loop-post .zuul-section-title {
-    margin: 0 40px;
+    margin: 0 20px;
     padding: 13px 20px 20px;
     background: #ffffff; }
+    @media only screen and (min-width: 640px) {
+      .zuul-loop-post .zuul-section-title {
+        margin: 0 30px; } }
   .zuul-loop-post .zuul-button {
     margin-top: 0; }
   .zuul-loop-post .entry-title {
@@ -1190,8 +1225,8 @@ a.zuul-alt {
   .zuul-single-author-meta .zuul-single-author-bio {
     background-color: #8BC6EC;
     background-image: linear-gradient(284deg, #8BC6EC 0%, #9599E2 100%);
-    font-size: 24px;
-    font-size: 1.5rem;
+    font-size: 22.624px;
+    font-size: 1.414rem;
     color: #ffffff;
     padding: 40px 60px 80px;
     border-radius: 5px 5px 0 0; }
@@ -1243,7 +1278,6 @@ a.zuul-alt {
     border: 0;
     box-shadow: inset 0 0 0 3px #f4f4f4;
     font-size: inherit;
-    font-weight: 700;
     position: relative;
     vertical-align: middle;
     transition: color 0.25s; }
@@ -1332,11 +1366,11 @@ a.zuul-alt {
   padding-bottom: 3em; }
   @media only screen and (min-width: 960px) {
     .page-template-template-homepage #zuul-masthead {
-      min-height: 450px;
+      min-height: 400px;
       max-height: 40vh; } }
   @media only screen and (min-width: 960px) {
     .page-template-template-homepage #zuul-masthead {
-      min-height: 600px;
+      min-height: 520px;
       max-height: 80vh; } }
 
 .page-template-template-homepage .zuul-hero-copy {
@@ -1346,7 +1380,7 @@ a.zuul-alt {
   animation-fill-mode: forwards;
   width: 100%;
   color: #ffffff;
-  padding: 5em 0 7em;
+  padding: 5em 0 6em;
   transform: translateY(-2em); }
   .zuul-hero-copy .zuul-button {
     animation: hero_text 1s ease-in-out;
@@ -1354,31 +1388,23 @@ a.zuul-alt {
 
 .zuul-hero-title {
   animation: hero_text 0.5s ease-in-out;
-  font-size: 48px;
-  font-size: 3rem;
+  font-size: 63.968px;
+  font-size: 3.998rem;
   line-height: 1.25;
   margin: 0; }
-  @media only screen and (min-width: 768px) {
-    .zuul-hero-title {
-      font-size: 64px;
-      font-size: 4rem; } }
   @media only screen and (min-width: 960px) {
     .zuul-hero-title {
-      font-size: 88px;
-      font-size: 5.5rem; } }
+      font-size: 75.28px;
+      font-size: 4.705rem; } }
 
 .zuul-hero-desc {
-  font-family: "Didact Gothic", sans-serif;
+  font-family: "Rubik", sans-serif;
   font-weight: 400;
   animation: hero_text 0.75s ease-in-out;
-  font-size: 20px;
-  font-size: 1.25rem;
+  font-size: 22.624px;
+  font-size: 1.414rem;
   line-height: 1.25;
-  margin: 1em 0 1.5em; }
-  @media only screen and (min-width: 768px) {
-    .zuul-hero-desc {
-      font-size: 24px;
-      font-size: 1.5rem; } }
+  margin: .707em 0 1.5em; }
 
 .zuul-angle {
   position: absolute;
@@ -1407,7 +1433,11 @@ a.zuul-alt {
 .zuul-callout {
   background-color: #8BC6EC;
   background-image: linear-gradient(284deg, #8BC6EC 0%, #9599E2 100%);
-  color: #ffffff; }
+  color: #ffffff;
+  padding: 10px 0; }
+  @media only screen and (min-width: 640px) {
+    .zuul-callout {
+      padding: 0; } }
   .zuul-callout .column-1 {
     display: flex;
     justify-content: center;
@@ -1571,8 +1601,8 @@ a.zuul-alt {
       width: 100%; }
 
 .column-3 .zuul-loop-heading h3 {
-  font-size: 32px;
-  font-size: 2rem; }
+  font-size: 31.984px;
+  font-size: 1.999rem; }
 
 .zuul-product-overlay {
   border-radius: 20px; }
@@ -1819,12 +1849,12 @@ a.zuul-alt {
         .zuul-first-post .zuul-post-wrap .blog-info {
           padding-bottom: 8em; } }
       .zuul-first-post .zuul-post-wrap .blog-info h3 {
-        font-size: 24px;
-        font-size: 1.5rem; }
+        font-size: 22.624px;
+        font-size: 1.414rem; }
         @media only screen and (min-width: 640px) {
           .zuul-first-post .zuul-post-wrap .blog-info h3 {
-            font-size: 48px;
-            font-size: 3rem; } }
+            font-size: 45.232px;
+            font-size: 2.827rem; } }
         .zuul-first-post .zuul-post-wrap .blog-info h3 a {
           color: #ffffff; }
           .zuul-first-post .zuul-post-wrap .blog-info h3 a:hover, .zuul-first-post .zuul-post-wrap .blog-info h3 a:focus, .zuul-first-post .zuul-post-wrap .blog-info h3 a:visited {
@@ -2042,9 +2072,15 @@ a.zuul-alt {
   color: #c1c1c1;
   font-weight: 300; }
 
+.comment-navigation {
+  max-width: 892px;
+  margin: 0 auto; }
+  .comment-navigation .nav-links {
+    padding-bottom: 0; }
+
 .comment-list {
   list-style-type: none;
-  padding: 2em 0 1em;
+  padding: 0 0 1em;
   margin: 0 auto;
   max-width: 892px;
   border: 1px solid #f4f4f4; }
@@ -2150,7 +2186,9 @@ a.zuul-alt {
 .not-found {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  margin-top: 80px;
+  margin-bottom: 80px; }
   .no-results header,
   .not-found header {
     width: 100%; }
@@ -2163,8 +2201,8 @@ a.zuul-alt {
   padding-bottom: 10em; }
 
 .search-title {
-  font-size: 48px;
-  font-size: 3rem; }
+  font-size: 45.232px;
+  font-size: 2.827rem; }
 
 .search-content {
   border-bottom: 1px solid #ccc;

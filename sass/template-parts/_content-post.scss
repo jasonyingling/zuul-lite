@@ -239,10 +239,10 @@
             }
 
             h3 {
-                @include font-size(1.5);
+                @include font-size(1.414);
 
                 @include grid-media($break640) {
-                    @include font-size(3);
+                    @include font-size(2.827);
                 }
 
                 a {

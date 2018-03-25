@@ -215,12 +215,11 @@ if ( ! function_exists( 'zuul_related_posts' ) ) :
 			<div class="zuul-related-posts zuul-hp-loop">
 				<h3><?php echo __( 'Related Posts', 'zuul-lite' ); ?></h3>
 
-		<?php while( $the_query->have_posts() ) : $the_query->the_post(); ?>
+				<?php while( $the_query->have_posts() ) : $the_query->the_post(); ?>
 
-			<?php get_template_part( 'template-parts/content', 'hp-post' ); ?>
+					<?php get_template_part( 'template-parts/content', 'related-post' ); ?>
 
-
-		<?php endwhile; wp_reset_postdata(); ?>
+				<?php endwhile; wp_reset_postdata(); ?>
 
 			</div>
 
@@ -237,11 +236,13 @@ if ( ! function_exists( 'zuul_pagination' ) ) :
 		global $wp_query;
 		if( $query ) {
 			$temp_query = $wp_query;
-			$wp_query = $query;
+			$current_query = $query;
+		} else {
+			$current_query = $wp_query;
 		}
 
 		// Return early if there's only one page.
-		if ( $GLOBALS['wp_query']->max_num_pages < 2 ) {
+		if ( $current_query->max_num_pages < 2 ) {
 			return;
 		}
 
@@ -251,7 +252,7 @@ if ( ! function_exists( 'zuul_pagination' ) ) :
 			'base'      => str_replace( $big, '%#%', esc_url( get_pagenum_link( $big ) ) ),
 			'format'    => '?paged=%#%',
 			'current'   => max( 1, get_query_var('paged') ),
-			'total'     => $wp_query->max_num_pages,
+			'total'     => $current_query->max_num_pages,
 	 		'prev_text'          => __('<i class="fa fa-long-arrow-left" aria-hidden="true"></i>', 'zuul-lite'),
 	 		'next_text'          => __('<i class="fa fa-long-arrow-right" aria-hidden="true"></i>', 'zuul-lite'),
 	 	);
@@ -276,8 +277,6 @@ if ( ! function_exists( 'zuul_hero_content' ) ) :
 			$link = get_theme_mod( 'zuul_hero_link' );
 		} elseif ( is_home() ) {
 			$page_id = get_option('page_for_posts');
-		} elseif ( class_exists( 'WooCommerce' ) && ( is_shop() || is_post_type_archive( 'product' ) ) ) {
-			$page_id = wc_get_page_id('shop');
 		} else {
 			$page_id = get_the_ID();
 		}
@@ -288,9 +287,9 @@ if ( ! function_exists( 'zuul_hero_content' ) ) :
 			is_singular('download') ||
 			is_singular('jetpack-testimonial') ||
 			is_singular('jetpack-portfolio') ||
-			( is_page() && ! is_page_template('page-templates/template-homepage.php') && class_exists( 'acf' ) && ! get_field('include_hero', $page_id) ) ||
+			( is_page() && ! is_page_template('page-templates/template-homepage.php') ) ||
 			is_tax() ||
-			( is_archive() && ! is_shop() ) ||
+			( is_archive() ) ||
 			is_search() ||
 			is_404() ||
 			( is_home() && is_front_page() )

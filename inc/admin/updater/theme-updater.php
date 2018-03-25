@@ -5,8 +5,8 @@
  * @package EDD Sample Theme
  */
 
-// Includes the files needed for the theme updater
-if ( !class_exists( 'Zuul_Theme_Updater_Admin' ) ) {
+// Includes the files needed for the theme information
+if ( !class_exists( 'Zuul_Theme_Information' ) ) {
 	include( dirname( __FILE__ ) . '/theme-updater-admin.php' );
 }
 
@@ -14,7 +14,7 @@ if ( !class_exists( 'Zuul_Theme_Updater_Admin' ) ) {
 define( 'ZUUL_SL_THEME_VERSION', wp_get_theme( 'zuul-lite' )->get( 'Version' ) );
 
 // Loads the updater classes
-$updater = new Zuul_Theme_Updater_Admin(
+$zuul_info = new Zuul_Theme_Information(
 
 	// Config settings
 	$config = array(
@@ -23,34 +23,11 @@ $updater = new Zuul_Theme_Updater_Admin(
 		'theme_slug'     => 'zuul-lite', // Theme slug
 		'version'        => ZUUL_SL_THEME_VERSION, // The current version of this theme
 		'author'         => __( 'Jason Yingling', 'zuul-lite' ), // The author of this theme
-		'download_id'    => '26455', // Optional, used for generating a license renewal link
-		'renew_url'      => '', // Optional, allows for a custom license renewal link
 	),
 
 	// Strings
 	$strings = array(
-		'theme-license'             => __( 'Getting Started', 'zuul-lite' ),
-		'enter-key'                 => __( 'Enter your theme license key.', 'zuul-lite' ),
-		'license-key'               => __( 'License Key', 'zuul-lite' ),
-		'license-action'            => __( 'License Action', 'zuul-lite' ),
-		'deactivate-license'        => __( 'Deactivate License', 'zuul-lite' ),
-		'activate-license'          => __( 'Activate License', 'zuul-lite' ),
-		'status-unknown'            => __( 'License status is unknown.', 'zuul-lite' ),
-		'renew'                     => __( 'Renew?', 'zuul-lite' ),
-		'unlimited'                 => __( 'unlimited', 'zuul-lite' ),
-		'license-key-is-active'     => __( 'License key is active.', 'zuul-lite' ),
-		'expires%s'                 => __( 'Expires %s.', 'zuul-lite' ),
-		'expires-never'             => __( 'Lifetime License.', 'zuul-lite' ),
-		'%1$s/%2$-sites'            => __( 'You have %1$s / %2$s sites activated.', 'zuul-lite' ),
-		'license-key-expired-%s'    => __( 'License key expired %s.', 'zuul-lite' ),
-		'license-key-expired'       => __( 'License key has expired.', 'zuul-lite' ),
-		'license-keys-do-not-match' => __( 'License keys do not match.', 'zuul-lite' ),
-		'license-is-inactive'       => __( 'License is inactive.', 'zuul-lite' ),
-		'license-key-is-disabled'   => __( 'License key is disabled.', 'zuul-lite' ),
-		'site-is-inactive'          => __( 'Site is inactive.', 'zuul-lite' ),
-		'license-status-unknown'    => __( 'License status is unknown.', 'zuul-lite' ),
-		'update-notice'             => __( "Updating this theme will lose any customizations you have made. 'Cancel' to stop, 'OK' to update.", 'zuul-lite' ),
-		'update-available'          => __('<strong>%1$s %2$s</strong> is available. <a href="%3$s" class="thickbox" title="%4s">Check out what\'s new</a> or <a href="%5$s"%6$s>update now</a>.', 'zuul-lite' ),
+		'theme-information'             => __( 'Getting Started', 'zuul-lite' ),
 	)
 
 );
