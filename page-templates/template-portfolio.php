@@ -54,13 +54,13 @@ get_header(); ?>
 
 			            while ( $project_query -> have_posts() ) : $project_query -> the_post(); ?>
 
-							<?php get_template_part( 'template-parts/content', 'product' ); ?>
+							<?php get_template_part( 'template-parts/content', 'project' ); ?>
 
 						<?php endwhile; ?>
 
 						<?php zuul_pagination( $project_query ); ?>
 
-					<?php endif; ?>
+					<?php endif; wp_reset_postdata(); ?>
 
 			</div>
 

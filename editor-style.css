@@ -213,8 +213,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   clear: both;
-  margin: 36px 0 24px;
-  text-shadow: 0.05em 0.05em rgba(0, 0, 0, 0.15); }
+  margin: 36px 0 24px; }
   h1.zuul-title-border:before, h2.zuul-title-border:before, h3.zuul-title-border:before, h4.zuul-title-border:before, h5.zuul-title-border:before, h6.zuul-title-border:before {
     content: '';
     width: 80px;
@@ -1391,7 +1390,8 @@ a.zuul-alt {
   font-size: 63.968px;
   font-size: 3.998rem;
   line-height: 1.25;
-  margin: 0; }
+  margin: 0;
+  text-shadow: 0.05em 0.05em rgba(0, 0, 0, 0.15); }
   @media only screen and (min-width: 960px) {
     .zuul-hero-title {
       font-size: 75.28px;

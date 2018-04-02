@@ -45,7 +45,7 @@ get_header(); ?>
 
 						<?php zuul_pagination( $post_query ); ?>
 
-					<?php endif; ?>
+					<?php endif; wp_reset_postdata(); ?>
 
 			</div>
 

@@ -104,9 +104,9 @@ if ( ! function_exists( 'zuul_section_intro' ) ) :
 	 */
 	 function zuul_section_intro( $post_id = null ) {
 
-		global $hero_displayed;
+		global $zuul_hero_displayed;
 
-		if ( $hero_displayed && ! is_front_page() ) {
+		if ( $zuul_hero_displayed && ! is_front_page() ) {
 			return;
 		}
 
@@ -267,14 +267,14 @@ if ( ! function_exists( 'zuul_hero_content' ) ) :
 
 	function zuul_hero_content($title = null, $desc = null, $cta = null, $link = null) {
 
-		global $hero_displayed;
+		global $zuul_hero_displayed;
 
 		if ( is_page_template('page-templates/template-homepage.php') && is_front_page() ) {
 			$page_id = get_the_ID();
-			$title = get_theme_mod( 'zuul_hero_title', get_bloginfo('name') );
-			$desc = get_theme_mod( 'zuul_hero_desc', get_bloginfo('description') );
-			$cta = get_theme_mod( 'zuul_hero_cta' );
-			$link = get_theme_mod( 'zuul_hero_link' );
+			$title = esc_html( get_theme_mod( 'zuul_hero_title', get_bloginfo('name') ) );
+			$desc = esc_html( get_theme_mod( 'zuul_hero_desc', get_bloginfo('description') ) );
+			$cta = esc_html( get_theme_mod( 'zuul_hero_cta' ) );
+			$link = esc_url( get_theme_mod( 'zuul_hero_link' ) );
 		} elseif ( is_home() ) {
 			$page_id = get_option('page_for_posts');
 		} else {
@@ -336,7 +336,7 @@ if ( ! function_exists( 'zuul_hero_content' ) ) :
 		}
 
 		if ( $content ) {
-			$hero_displayed = true;
+			$zuul_hero_displayed = true;
 			printf('<section class="zuul-hero-copy">%s</section>', $content);
 		}
 
@@ -348,9 +348,9 @@ if ( ! function_exists( 'zuul_svg_angle' ) ) :
 
 	function zuul_svg_angle() {
 
-		global $hero_displayed;
+		global $zuul_hero_displayed;
 
-		if ( ! $hero_displayed ) {
+		if ( ! $zuul_hero_displayed ) {
 			return;
 		}
 

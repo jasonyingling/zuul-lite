@@ -24,7 +24,7 @@ jQuery(document).ready(function ($) {
 
 
 	// Back to top links
-	$( "#help-panel h3" ).append( $( "<a class='back-to-top' href='#panel'><i class='fa fa-angle-up'></i> Back to top</a>" ) );
+	$( "#help-panel h3" ).append( $( "<a class='back-to-top' href='#panel'><i class='fa fa-angle-up'></i> ^</a>" ) );
 
 
 	// Add lightbox to cloud links

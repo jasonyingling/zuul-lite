@@ -26,7 +26,7 @@
 	$products = new WP_Query($args);
 
 	while( $products->have_posts() ) : $products->the_post(); ?>
-		<?php get_template_part( 'template-parts/content', 'product' ); ?>
+		<?php get_template_part( 'template-parts/content', 'project' ); ?>
 	<?php endwhile; wp_reset_query(); ?>
 
 </div>

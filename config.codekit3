@@ -65,23 +65,13 @@
 		"oAP": "\/comments.php",
 		"oF": 0
 		},
-	"\/easy-navigation\/js\/min\/site-header-min.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/easy-navigation\/js\/min\/min\/site-header-min-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
 	"\/easy-navigation\/js\/site-header.js": {
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "\/easy-navigation\/js\/min\/site-header-min.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 1,
 		"tS": 0
 		},
@@ -89,19 +79,9 @@
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "\/easy-navigation\/js\/vendor\/min\/jquery.mmenu.all-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"\/easy-navigation\/js\/vendor\/jquery.mmenu.min.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/easy-navigation\/js\/vendor\/min\/jquery.mmenu.min-min.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 1,
 		"tS": 0
 		},
@@ -327,16 +307,6 @@
 		"rFN": 0,
 		"uCM": 0
 		},
-	"\/inc\/admin\/getting-started\/getting-started-min.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "\/inc\/admin\/getting-started\/getting-started-min-min.css",
-		"oF": 0,
-		"oS": 3
-		},
 	"\/inc\/admin\/getting-started\/getting-started.css": {
 		"aP": 1,
 		"bl": 0,
@@ -357,55 +327,272 @@
 		"sC": 1,
 		"tS": 0
 		},
-	"\/inc\/admin\/getting-started\/jquery.form.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
+	"\/inc\/admin\/information\/assets\/featured-1000x750.jpg": {
+		"ft": 16384,
+		"iS": 91965,
 		"oA": 0,
-		"oAP": "\/inc\/admin\/getting-started\/min\/jquery.form-min.js",
-		"oF": 3,
-		"sC": 1,
-		"tS": 0
+		"oAP": "\/inc\/admin\/information\/assets\/featured-1000x750.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
 		},
-	"\/inc\/admin\/getting-started\/jquery.validate.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
+	"\/inc\/admin\/information\/assets\/help\/blog.jpg": {
+		"ft": 16384,
+		"iS": 24390,
 		"oA": 0,
-		"oAP": "\/inc\/admin\/getting-started\/min\/jquery.validate-min.js",
-		"oF": 3,
-		"sC": 1,
-		"tS": 0
+		"oAP": "\/inc\/admin\/information\/assets\/help\/blog.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
 		},
-	"\/inc\/admin\/getting-started\/zuul-form.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
+	"\/inc\/admin\/information\/assets\/help\/buzz.jpg": {
+		"ft": 16384,
+		"iS": 4648,
 		"oA": 0,
-		"oAP": "\/inc\/admin\/getting-started\/min\/zuul-form-min.js",
-		"oF": 3,
-		"sC": 1,
-		"tS": 0
+		"oAP": "\/inc\/admin\/information\/assets\/help\/buzz.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
 		},
-	"\/inc\/admin\/updater\/theme-updater-admin.php": {
+	"\/inc\/admin\/information\/assets\/help\/callout.jpg": {
+		"ft": 16384,
+		"iS": 4141,
+		"oA": 0,
+		"oAP": "\/inc\/admin\/information\/assets\/help\/callout.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/inc\/admin\/information\/assets\/help\/featured.jpg": {
+		"ft": 16384,
+		"iS": 17642,
+		"oA": 0,
+		"oAP": "\/inc\/admin\/information\/assets\/help\/featured.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/inc\/admin\/information\/assets\/help\/font-awesome.jpg": {
+		"ft": 16384,
+		"iS": 9463,
+		"oA": 0,
+		"oAP": "\/inc\/admin\/information\/assets\/help\/font-awesome.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/inc\/admin\/information\/assets\/help\/hero.jpg": {
+		"ft": 16384,
+		"iS": 18278,
+		"oA": 0,
+		"oAP": "\/inc\/admin\/information\/assets\/help\/hero.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/inc\/admin\/information\/assets\/help\/image-sizes.jpg": {
+		"ft": 16384,
+		"iS": 17338,
+		"oA": 0,
+		"oAP": "\/inc\/admin\/information\/assets\/help\/image-sizes.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/inc\/admin\/information\/assets\/help\/page-attrs.jpg": {
+		"ft": 16384,
+		"iS": 5005,
+		"oA": 0,
+		"oAP": "\/inc\/admin\/information\/assets\/help\/page-attrs.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/inc\/admin\/information\/assets\/help\/placeholder.jpg": {
+		"ft": 16384,
+		"iS": 20452,
+		"oA": 0,
+		"oAP": "\/inc\/admin\/information\/assets\/help\/placeholder.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/inc\/admin\/information\/assets\/help\/product.jpg": {
+		"ft": 16384,
+		"iS": 29252,
+		"oA": 0,
+		"oAP": "\/inc\/admin\/information\/assets\/help\/product.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/inc\/admin\/information\/assets\/help\/reading-settings.jpg": {
+		"ft": 16384,
+		"iS": 5954,
+		"oA": 0,
+		"oAP": "\/inc\/admin\/information\/assets\/help\/reading-settings.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/inc\/admin\/information\/assets\/help\/testimonial.jpg": {
+		"ft": 16384,
+		"iS": 6024,
+		"oA": 0,
+		"oAP": "\/inc\/admin\/information\/assets\/help\/testimonial.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/inc\/admin\/information\/assets\/pro\/content-1-768x1152.jpg": {
+		"ft": 16384,
+		"iS": 76978,
+		"oA": 0,
+		"oAP": "\/inc\/admin\/information\/assets\/pro\/content-1-768x1152.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"\/inc\/admin\/information\/assets\/pro\/devices-768x665.jpg": {
+		"ft": 16384,
+		"iS": 43056,
+		"oA": 0,
+		"oAP": "\/inc\/admin\/information\/assets\/pro\/devices-768x665.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"\/inc\/admin\/information\/assets\/pro\/features-768x815.jpg": {
+		"ft": 16384,
+		"iS": 56822,
+		"oA": 0,
+		"oAP": "\/inc\/admin\/information\/assets\/pro\/features-768x815.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"\/inc\/admin\/information\/assets\/pro\/heroes-640x1024.jpg": {
+		"ft": 16384,
+		"iS": 59574,
+		"oA": 0,
+		"oAP": "\/inc\/admin\/information\/assets\/pro\/heroes-640x1024.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"\/inc\/admin\/information\/assets\/pro\/homepage-650x1024.jpg": {
+		"ft": 16384,
+		"iS": 62390,
+		"oA": 0,
+		"oAP": "\/inc\/admin\/information\/assets\/pro\/homepage-650x1024.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"\/inc\/admin\/information\/assets\/pro\/projects-768x767.jpg": {
+		"ft": 16384,
+		"iS": 49314,
+		"oA": 0,
+		"oAP": "\/inc\/admin\/information\/assets\/pro\/projects-768x767.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"\/inc\/admin\/information\/assets\/pro\/rcp-768x924.jpg": {
+		"ft": 16384,
+		"iS": 55917,
+		"oA": 0,
+		"oAP": "\/inc\/admin\/information\/assets\/pro\/rcp-768x924.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/inc\/admin\/information\/assets\/pro\/shop-768x916.jpg": {
+		"ft": 16384,
+		"iS": 64470,
+		"oA": 0,
+		"oAP": "\/inc\/admin\/information\/assets\/pro\/shop-768x916.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/inc\/admin\/information\/assets\/pro\/started-768x675.jpg": {
+		"ft": 16384,
+		"iS": 47290,
+		"oA": 0,
+		"oAP": "\/inc\/admin\/information\/assets\/pro\/started-768x675.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/inc\/admin\/information\/assets\/pro\/templates-768x890.jpg": {
+		"ft": 16384,
+		"iS": 79505,
+		"oA": 0,
+		"oAP": "\/inc\/admin\/information\/assets\/pro\/templates-768x890.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/inc\/admin\/information\/assets\/pro\/testimonials.jpg": {
+		"ft": 16384,
+		"iS": 37035,
+		"oA": 0,
+		"oAP": "\/inc\/admin\/information\/assets\/pro\/testimonials.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/inc\/admin\/information\/theme-information-admin.php": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/inc\/admin\/updater\/theme-updater-admin.php",
+		"oAP": "\/inc\/admin\/information\/theme-information-admin.php",
 		"oF": 0
 		},
-	"\/inc\/admin\/updater\/theme-updater-class.php": {
+	"\/inc\/admin\/information\/theme-information.php": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/inc\/admin\/updater\/theme-updater-class.php",
+		"oAP": "\/inc\/admin\/information\/theme-information.php",
 		"oF": 0
 		},
-	"\/inc\/admin\/updater\/theme-updater.php": {
+	"\/inc\/admin\/information\/zuul-help.php": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/inc\/admin\/updater\/theme-updater.php",
+		"oAP": "\/inc\/admin\/information\/zuul-help.php",
+		"oF": 0
+		},
+	"\/inc\/admin\/information\/zuul-pro.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/inc\/admin\/information\/zuul-pro.php",
 		"oF": 0
 		},
 	"\/inc\/custom-header.php": {
@@ -470,42 +657,12 @@
 		"sC": 1,
 		"tS": 0
 		},
-	"\/js\/min\/customizer-min.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/js\/min\/min\/customizer-min-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
 	"\/js\/min\/isotope.pkgd.min.js": {
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/js\/min\/min\/isotope.pkgd.min-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"\/js\/min\/navigation-min.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/js\/min\/min\/navigation-min-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"\/js\/min\/site-header-min.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/js\/min\/min\/site-header-min-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
@@ -640,16 +797,6 @@
 		"oA": 2,
 		"oAP": "\/readme.txt",
 		"oF": 0
-		},
-	"\/rtl.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "\/rtl-min.css",
-		"oF": 0,
-		"oS": 3
 		},
 	"\/sass\/_normalize.scss": {
 		"aP": 0,
@@ -1711,6 +1858,13 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/template-parts\/content-page.php",
+		"oF": 0
+		},
+	"\/template-parts\/content-project.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/template-parts\/content-project.php",
 		"oF": 0
 		},
 	"\/template-parts\/content-projects.php": {

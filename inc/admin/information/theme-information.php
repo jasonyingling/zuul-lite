@@ -7,7 +7,7 @@
 
 // Includes the files needed for the theme information
 if ( !class_exists( 'Zuul_Theme_Information' ) ) {
-	include( dirname( __FILE__ ) . '/theme-updater-admin.php' );
+	include( dirname( __FILE__ ) . '/theme-information-admin.php' );
 }
 
 // The theme version to use in the updater
@@ -27,7 +27,7 @@ $zuul_info = new Zuul_Theme_Information(
 
 	// Strings
 	$strings = array(
-		'theme-information'             => __( 'Getting Started', 'zuul-lite' ),
+		'theme-information'             => __( 'Theme Help', 'zuul-lite' ),
 	)
 
 );

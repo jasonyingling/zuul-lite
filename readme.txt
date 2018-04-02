@@ -4,7 +4,7 @@ Donate link: https://themes.pizza
 Tags: featured-image-header, custom-background, custom-colors, custom-menu, editor-style, featured-images, theme-options, translation-ready, e-commerce, footer-widgets, full-width-template
 Requires at least: 4.5
 Tested up to: 4.9.4
-Stable tag: 1.0.12
+Stable tag: 1.0.16
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -13,6 +13,28 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Zuul is a beautiful WordPress theme built to make it easy to create an online store. Display features, testimonials, portfolio, blog posts, and more.
 
 == Change Log ==
+
+= 1.0.16 - 4/1/18 =
+* Removing text-shadow from headings
+* Escaping image urls in help file
+
+= 1.0.15 - 3/31/18 =
+* Updating help file
+* Fixed bug with admin bar when using mobile menu
+* Removing extra files that weren't used
+* Reseting postdata
+* Updated missing translation function
+* Escaping theme mods
+
+= 1.0.14 - 3/27/18 =
+* Moving help file resources into theme
+
+= 1.0.13 - 3/25/18 =
+* Removing newsletter subscription on theme activation
+* Remove theme udpater functionality that is not used in Zuul Lite. Renaming remaining to theme information.
+* Making text in Theme Information translatable
+* Prefixing functions in easy-navigation and jetpack files
+* Removing extra customizer functions not used in Zuul Lite
 
 = 1.0.12 - 3/12/18 =
 * Updating argument swapping in theme-updater-admin.php
@@ -71,10 +93,6 @@ jquery.mmenu.all.js, jquery.mmenu.min.js, _mmenu.scss © 2015 Fred Heusschen, MI
 
 isotope.pkgd.min.js, isotope.pkgd.js © 2018 Metafizzy, GPLv3
 
-theme-updater-admin.php, theme-updater-class.php, theme-updater.php © 2018 Sandhiils Development, GPLv2
+theme-updater-admin.php, theme-updater-class.php, theme-updater.php © 2018 Sandhills Development, GPLv2
 
-class-connekt-plugin-installer.php, isntall.css, installer.js © 2017 dcooney, GPLv2
-
-jquery.form.js © 2014 M. Alsup, GPL
-
-jquery.validate.js, © 2014 Jörn Zaefferer
+class-connekt-plugin-installer.php, install.css, installer.js © 2017 dcooney, GPLv2

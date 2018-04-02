@@ -82,7 +82,7 @@ function zuul_customize_register( $wp_customize ) {
         'priority'    => 40,
         'section'     => 'header_image',
         'label'       => __( 'Header Image Opacity', 'zuul-lite' ),
-        'description' => 'Change the opacity of your header image.',
+        'description' => __( 'Change the opacity of your header image.', 'zuul-lite' ),
         'input_attrs' => array(
             'min'   => 0,
             'max'   => 1,
@@ -107,7 +107,7 @@ function zuul_customize_register( $wp_customize ) {
         'priority'    => 10,
         'section'     => 'title_tagline',
         'label'       => __( 'Logo Size', 'zuul-lite' ),
-        'description' => 'Adjust the size of your site logo',
+        'description' => __( 'Adjust the size of your site logo', 'zuul-lite' ),
         'input_attrs' => array(
             'min'   => 25,
             'max'   => 1000,
@@ -176,6 +176,7 @@ function zuul_customize_register( $wp_customize ) {
 		'priority'   => 5,
 		'capability' => 'edit_theme_options',
 		'title'      => esc_html__( 'Theme Options', 'zuul-lite' ),
+        'description' => __( 'To take advantage of the custom front page options you will need to use a static front page using the Homepage template. You can set this in the Homepage settings panel in the customizer or Settings > Reading from the dashboard.', 'zuul-lite' ),
 	) );
 
     /**
@@ -276,6 +277,7 @@ function zuul_customize_register( $wp_customize ) {
 		'capability' => 'edit_theme_options',
 		'title'      => esc_html__( 'Front Page Sections', 'zuul-lite' ),
 		'panel'      => 'zuul_theme_options_panel',
+        'description' => __( 'In order to show the front page sections you will need to use a static front page using the Homepage template. This can be set in the Homepage Settings panel in the customizer or in the Settings > Reading menu of your dashboard.', 'zuul-lite' )
 	) );
 
 	/**
@@ -388,6 +390,7 @@ function zuul_customize_register( $wp_customize ) {
 		'label'           => esc_html__( 'Number of blog posts to show:', 'zuul-lite' ),
 		'section'         => 'zuul_front_page',
 		'type'            => 'select',
+        'active_callback' => 'zuul_is_static_front_page',
 		'priority'        => 40,
 		'choices'         => array(
 			'1'  => '1',
@@ -402,7 +405,6 @@ function zuul_customize_register( $wp_customize ) {
 			'10' => '10',
 		),
 	));
-
 
 	/**
 	 * Homepage Features Count
@@ -419,6 +421,7 @@ function zuul_customize_register( $wp_customize ) {
 		'label'           => esc_html__( 'Number of features to show:', 'zuul-lite' ),
 		'section'         => 'zuul_front_page',
 		'type'            => 'select',
+        'active_callback' => 'zuul_is_static_front_page',
 		'priority'        => 50,
 		'choices'         => array(
 			'99'  => esc_html__( 'Show All', 'zuul-lite' ),
@@ -701,60 +704,6 @@ function zuul_hero_desc_partial() {
  */
 function zuul_hero_cta_partial() {
     return get_theme_mod( 'zuul_hero_cta' );
-}
-
-/**
- * Render the feaftured button text for the selective refresh partial.
- *
- * @return void
- */
-function featured_button_text_partial() {
-    return get_theme_mod( 'featured_button_text' );
-}
-
-/**
- * Render the featured section image for the selective refresh partial.
- *
- * @return void
- */
-function featured_section_image_partial() {
-    return wp_get_attachment_image( get_theme_mod( 'featured_section_image' ), 'full' );
-}
-
-/**
- * Render the featured section title for the selective refresh partial.
- *
- * @return void
- */
-function featured_section_title_partial() {
-    return get_theme_mod( 'featured_section_title' );
-}
-
-/**
- * Render the featured section copy for the selective refresh partial.
- *
- * @return void
- */
-function featured_section_copy_partial() {
-    return get_theme_mod( 'featured_section_copy' );
-}
-
-/**
- * Render the callout section text for the selective refresh partial.
- *
- * @return void
- */
-function callout_section_text_partial() {
-    return get_theme_mod( 'callout_section_text' );
-}
-
-/**
- * Render the callout button text for the selective refresh partial.
- *
- * @return void
- */
-function callout_button_text_partial() {
-    return get_theme_mod( 'callout_button_text' );
 }
 
 /**

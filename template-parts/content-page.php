@@ -6,7 +6,7 @@
  *
  * @package zuul-lite
  */
- global $hero_displayed;
+ global $zuul_hero_displayed;
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>

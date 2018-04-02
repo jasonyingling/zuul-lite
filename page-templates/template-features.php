@@ -52,7 +52,7 @@ get_header(); ?>
 
 						<?php zuul_pagination( $features_query ); ?>
 
-					<?php endif; wp_reset_query(); ?>
+					<?php endif; wp_reset_postdata(); ?>
 
 			</div>
 

@@ -57,18 +57,3 @@ function zuul_infinite_scroll_render() {
 		endif;
 	}
 }
-
-/**
- * Customize text for Jetpack infinite Scroll
- */
- function jeherve_custom_infinite_more() {
- if ( is_home() || is_archive() ) {
- ?>
-     <script type="text/javascript">
-     //<![CDATA[
-     infiniteScroll.settings.text = "<?php echo __('More Posts', 'zuul-lite'); ?>";
-     //]]>
-     </script>
- <?php }
- }
- add_action( 'wp_footer', 'jeherve_custom_infinite_more', 3 );

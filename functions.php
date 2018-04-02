@@ -186,7 +186,7 @@ add_action( 'admin_init', 'zuul_theme_add_editor_styles' );
 function zuul_theme_updater() {
 	define('CNKT_INSTALLER_PATH', get_template_directory_uri() .'/inc/admin/connekt-plugin-installer/');
 	include_once( get_template_directory() . '/inc/admin/connekt-plugin-installer/class-connekt-plugin-installer.php');
-	require( get_template_directory() . '/inc/admin/updater/theme-updater.php' );
+	require( get_template_directory() . '/inc/admin/information/theme-information.php' );
 }
 add_action( 'after_setup_theme', 'zuul_theme_updater' );
 

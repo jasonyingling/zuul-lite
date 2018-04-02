@@ -47,7 +47,7 @@ get_header(); ?>
 
 						<?php zuul_pagination( $project_query ); ?>
 
-					<?php endif; ?>
+					<?php endif; wp_reset_postdata(); ?>
 
 			</div>
 

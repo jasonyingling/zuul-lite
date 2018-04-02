@@ -1,5 +1,5 @@
 <?php
-function site_header_setup() {
+function zuul_site_header_setup() {
 
     // This theme uses wp_nav_menu() in one location.
     register_nav_menus( array(
@@ -19,16 +19,16 @@ function site_header_setup() {
     ) );
 
 }
-add_action( 'after_setup_theme', 'site_header_setup' );
+add_action( 'after_setup_theme', 'zuul_site_header_setup' );
 
 /**
  * Enqueue scripts and styles.
  */
-function site_header_scripts() {
+function zuul_site_header_scripts() {
 
-	wp_enqueue_script( 'mmenu', get_template_directory_uri() . '/easy-navigation/js/vendor/jquery.mmenu.all.js', array('jquery'), '20180307', true );
-
-	wp_enqueue_script( 'site-header', get_template_directory_uri() . '/easy-navigation/js/site-header.js', array('mmenu'), '20180307', true );
+    wp_enqueue_script( 'mmenu', get_template_directory_uri() . '/easy-navigation/js/vendor/jquery.mmenu.all.js', array('jquery'), '20180307', true );
+    
+	wp_enqueue_script( 'zuul-site-header', get_template_directory_uri() . '/easy-navigation/js/site-header.js', array('mmenu'), '20180307', true );
 
 }
-add_action( 'wp_enqueue_scripts', 'site_header_scripts' );
+add_action( 'wp_enqueue_scripts', 'zuul_site_header_scripts' );

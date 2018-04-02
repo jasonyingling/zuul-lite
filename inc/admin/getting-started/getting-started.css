@@ -122,6 +122,7 @@
 }
 .getting-started .panel-left ul.activation-row {
     padding-bottom: 10px;
+    margin-bottom: 0;
 }
 .getting-started .panel-left ul li, .getting-started .panel-left ol li {
 	padding-bottom: 20px;
@@ -650,6 +651,14 @@ h4 .button {
     color: #ffffff;
     padding: 10px 20px;
     border-radius: 5px;
+}
+
+.zuul-admin-notice .zuul-admin-button {
+    width: auto;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 10px;
+    clear: both;
 }
 
 .zuul-admin-button:hover,
