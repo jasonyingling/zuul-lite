@@ -72,6 +72,9 @@ if ( ! function_exists( 'zuul_setup' ) ) :
 		add_post_type_support( 'page', 'excerpt' );
 		add_post_type_support( 'jetpack-portfolio', 'excerpt' );
 
+		// Gutenberg align wide theme support
+		add_theme_support( 'align-wide' );
+
 	}
 endif;
 add_action( 'after_setup_theme', 'zuul_setup' );

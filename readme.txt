@@ -3,8 +3,8 @@ Contributors: yingling017
 Donate link: https://themes.pizza
 Tags: featured-image-header, custom-background, custom-colors, custom-menu, editor-style, featured-images, theme-options, translation-ready, e-commerce, footer-widgets, full-width-template
 Requires at least: 4.5
-Tested up to: 4.9.4
-Stable tag: 1.0.16
+Tested up to: 4.9.7
+Stable tag: 1.0.17
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -13,6 +13,9 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Zuul is a beautiful WordPress theme built to make it easy to create an online store. Display features, testimonials, portfolio, blog posts, and more.
 
 == Change Log ==
+
+= 1.0.17 - 7/9/18 =
+* Updating styles for Gutenberg core blocks
 
 = 1.0.16 - 4/1/18 =
 * Removing text-shadow from headings

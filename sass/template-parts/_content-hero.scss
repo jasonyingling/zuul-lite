@@ -1,64 +1,64 @@
 #zuul-masthead {
-    position: relative;
+  position: relative;
 }
 
 .page-template-template-homepage {
-    #zuul-masthead {
-        padding-bottom: 3em;
+  #zuul-masthead {
+    padding-bottom: 3em;
 
-        @include grid-media($break960) {
-            min-height: 400px;
-            max-height: 40vh;
-        }
-
-        @include grid-media($break960) {
-            min-height: 520px;
-            max-height: 80vh;
-        }
+    @include grid-media($break960) {
+      min-height: 400px;
+      max-height: 40vh;
     }
 
-    .zuul-hero-copy {
-        padding: 5em 0 0;
+    @include grid-media($break960) {
+      min-height: 520px;
+      max-height: 80vh;
     }
+  }
+
+  .zuul-hero-copy {
+    padding: 5em 0 0;
+  }
 }
 
 .zuul-hero-copy {
-    animation-fill-mode: forwards;
-    width: 100%;
-    color: $color__white;
-    padding: 5em 0 6em;
-    transform: translateY(-2em);
+  animation-fill-mode: forwards;
+  width: 100%;
+  color: $color__white;
+  padding: 5em 0 6em;
+  transform: translateY(-2em);
 
-    .zuul-button {
-        animation: hero_text 1s ease-in-out;
-        margin-top: 0;
-    }
+  .zuul-button {
+    //animation: hero_text 1s ease-in-out;
+    margin-top: 0;
+  }
 }
 
 .zuul-hero-title {
-    animation: hero_text 0.5s ease-in-out;
-    @include font-size(3.998);
-    line-height: 1.25;
-    margin: 0;
-    text-shadow: .05em .05em rgba( 0, 0, 0, .15 );
+  //animation: hero_text 0.5s ease-in-out;
+  @include font-size(3.998);
+  line-height: 1.25;
+  margin: 0;
+  text-shadow: 0.05em 0.05em rgba(0, 0, 0, 0.15);
 
-    @include grid-media($break960) {
-        @include font-size(4.705);
-    }
+  @include grid-media($break960) {
+    @include font-size(4.705);
+  }
 }
 
 .zuul-hero-desc {
-    font-family: $font__main;
-    font-weight: 400;
-    animation: hero_text 0.75s ease-in-out;
-    @include font-size(1.414);
-    line-height: 1.25;
-    margin: .707em 0 1.5em;
+  font-family: $font__main;
+  font-weight: 400;
+  //animation: hero_text 0.75s ease-in-out;
+  @include font-size(1.414);
+  line-height: 1.25;
+  margin: 0.707em 0 1.5em;
 }
 
 .zuul-angle {
-    position: absolute;
-    bottom: -1px;
-    width: 100%;
-    height: 5vw;
+  position: absolute;
+  bottom: -1px;
+  width: 100%;
+  height: 5vw;
 }

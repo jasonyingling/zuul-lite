@@ -88,6 +88,25 @@ blockquote {
 		top: 0;
 		left: 0;
 	}
+
+	&.wp-block-quote.is-large,
+	&.wp-block-pullquote {
+		padding: 1em 0 0.5em 0;
+
+		&:before {
+			display: none;
+		}
+
+		p {
+			margin-bottom: 0.5em;
+		}
+	}
+
+	&.wp-block-pullquote {
+		cite {
+			font-size: 0.75em;
+		}
+	}
 }
 
 q {
@@ -108,6 +127,10 @@ hr {
 	border: 0;
 	height: 1px;
 	margin-bottom: 1.5em;
+}
+
+audio {
+	width: 100%;
 }
 
 @import "lists";
